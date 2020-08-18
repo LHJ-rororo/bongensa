@@ -305,9 +305,14 @@ button{
 
 .sec03-big-box{
 	width: 80%;
+	height: auto;
+}
+.sec03-jogamdo{
+	width: 100%;
+	height: 100%;
 	background: url(../images/section04-jogamdo.png);
 	background-repeat: no-repeat;
-	background-size: 140%;
+	background-size: 100%;
 	background-position: left center;
 }
 
@@ -335,26 +340,40 @@ button{
 	}
 	.sec03-big-box{
 		width: 100%;
+
+	}
+	.sec03-menu{
+		width: 100%;
+		height: 200px;
+		overflow: auto;
+	}
+	.sec03-menu>ul>li{
+		margin: 0 1%;
+	}
+	.sec03-jogamdo{
+		
+		background-size: 145%;
+		background-position: top left;
+	}
+}
+
+
+@media(max-width: 480px){
+	#section03{
+		top:0;
+	}
+	.sec03-big-box{
+		height: 40%;
+	}
+	.sec03-jogamdo{
+		height: 100%;
 		background-size: 145%;
 		background-position: top left;
 	}
 	.sec03-menu{
 		width: 100%;
-		height: auto;
-		
-	}
-	.sec03-menu>ul{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.sec03-menu>ul>li{
-		margin: 0 1%;
-	}
-}
-@media(max-width: 480px){
-	.sec03-menu>ul{
-		display: none;
+		height: 100%;
+		overflow: auto;
 	}
 }
 
@@ -370,8 +389,6 @@ button{
 	width:100%; 
 	height:1000px; 
 	background:#fff;
-	background-repeat: no-repeat;
-	background-position: top center;
 	position: relative;}
 
 .section04-warp{
@@ -446,6 +463,24 @@ button{
 	
 }
 
+@media(max-width: 1200px){
+	#section04{
+		height: auto;
+	}
+	.sec04-img{
+		flex-direction: column;
+		align-items: center;
+	}
+	.sec04-img div{
+		margin: 0;
+		width: 80%;
+		background-position: center;
+	}
+
+}
+@media(max-width: 768px){}
+@media(max-width: 480px){}
+
 /* section04 end */
 
 /* section05 start */
@@ -453,6 +488,7 @@ button{
 #section05{
 	width:100%; 
 	height:100%;
+	position: relative;
 }
 .section05-warp{
 	width: 100%;
@@ -624,6 +660,27 @@ button{
 
 /* section05 효과 삽입 end */
 
+@media(max-width: 1200px){}
+@media(max-width: 768px){
+	#section05{
+		height:auto;
+	}
+	.sec05-imgbox{
+		flex-direction: column;
+		margin:0;
+	}
+	.sec05-box{
+		width: 100%;
+	}
+	.sec05-box img{
+		width: 100%;
+	}
+	.sec05-box p{
+		font-size: 1em;
+	}
+}
+@media(max-width: 480px){}
+
 /* section05 end */
 
 /* section06 start */
@@ -681,7 +738,18 @@ button{
 }
 
 
+@media(max-width: 1200px){}
+@media(max-width: 768px){
+	.sec06-map{
+		width: 100%;
+	}
+}
+@media(max-width: 480px){}
 
+
+
+
+/* section06 end */
 
 
 .menu_box{
