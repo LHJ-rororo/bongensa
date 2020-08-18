@@ -26,7 +26,11 @@ button{
 	border-style: none;
 }
 
-
+@media(max-width: 835px){
+	.menu_box ul{
+		display: none;
+	}
+}
             
 
 /* section01 start */
@@ -52,14 +56,30 @@ button{
 	padding-bottom: 20%;
 }
 
-@media(max-width: 1430px){
-
+@media(max-width: 1200px){
+	.section01-warp{
+		padding-top: 30%;
+		padding-bottom: 30%;
+	}
 	.sec01-text p{
 		margin-bottom: 20px;
 	}
 	.sec01-text h1{
 		font-size: 60px !important;
 		margin-bottom: 15%;
+	}
+}
+@media(max-width: 768px){
+	.section01-warp{
+		padding-top: 45%;
+		padding-bottom: 45%;
+	}
+}
+
+@media(max-width: 480px){
+	.section01-warp{
+		padding-top: 75%;
+		padding-bottom: 80%;
 	}
 }
 
@@ -157,9 +177,11 @@ button{
 
 }
 
-@media(max-width: 1430px){
-	.section02-warp{
+@media(max-width: 1200px){
+	.section02-warp{ 
 		width: 100%;
+		padding-top: 5%;
+		padding-bottom: 5%;
 		display: flex;
 	}
 	.sec02-text{
@@ -170,6 +192,7 @@ button{
 	.text-box{
 		text-align: center;
 		float: none;
+		margin-top: 4%;
 	}
 	.sec02-img{
 		width: 50%;
@@ -177,11 +200,17 @@ button{
 		margin-left: 0;
 		
 	}
+	.big-text{
+		font-size: 1.3em;
+	}
+	.small-text{
+		margin-bottom: 2%;
+	}
 }
 
 
 
-@media(max-width: 990px){
+@media(max-width: 768px){
 
 	.section02-warp{
 		width: 100%;
@@ -217,6 +246,22 @@ button{
 .sec02-btn{
 	display: none;
 }
+}
+
+@media(max-width: 480px){
+
+	.section02-warp{
+		padding-top: 20%;
+		padding-bottom:20%;
+	}
+
+	.text-box{
+		padding-top: 10%;
+		padding-bottom: 30%;
+	}
+	.sec02-img{
+		height: 100%;
+	}
 }
 
 /* 섹션2 미디어 끝 */
@@ -271,7 +316,47 @@ button{
 
 
 
-
+@media(max-width: 1200px){
+	.section03-warp{
+		align-items: center;
+	}
+	.sec03-big-box{
+		height: 50%;
+		background-size: 110%;
+	}
+}
+@media(max-width: 768px){
+	#section03{
+		top:30%;
+	}
+	.section03-warp{
+		display: flex;
+		flex-direction: column;
+	}
+	.sec03-big-box{
+		width: 100%;
+		background-size: 145%;
+		background-position: top left;
+	}
+	.sec03-menu{
+		width: 100%;
+		height: auto;
+		
+	}
+	.sec03-menu>ul{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.sec03-menu>ul>li{
+		margin: 0 1%;
+	}
+}
+@media(max-width: 480px){
+	.sec03-menu>ul{
+		display: none;
+	}
+}
 
 
 
