@@ -5,8 +5,11 @@
     font-weight: normal;
     font-style: normal;
 }
-            
-            
+
+::selection {
+    background: rgba(0, 182, 20,0.99);
+}
+
 h1,h2{
 	font-family: 'NotoSerifKR';
 }
@@ -79,7 +82,7 @@ button{
 @media(max-width: 480px){
 	.section01-warp{
 		padding-top: 75%;
-		padding-bottom: 80%;
+		padding-bottom: 75%;
 	}
 }
 
@@ -251,8 +254,9 @@ button{
 @media(max-width: 480px){
 
 	.section02-warp{
-		padding-top: 20%;
-		padding-bottom:20%;
+		margin: 0;
+		padding-top: 0s;
+		padding-bottom:0;
 	}
 
 	.text-box{
@@ -394,7 +398,7 @@ button{
 .section04-warp{
 	width: auto;
 	height: auto;
-	padding-top: 10%;
+	padding-top: 5%;
 }
 
 .sec04-text{
@@ -409,7 +413,7 @@ button{
 }
 
 .text-line{
-	width: 300px;
+	width: 80%x;
 	height: 2px;
 	background: #000;
 	margin: 0 auto;
@@ -479,7 +483,15 @@ button{
 
 }
 @media(max-width: 768px){}
-@media(max-width: 480px){}
+@media(max-width: 480px){
+	#section04{
+		height: auto;
+	}
+	.sec04-img div{
+		width: 100%;
+		height: 200px;
+	}
+}
 
 /* section04 end */
 
@@ -494,13 +506,32 @@ button{
 	width: 100%;
 	height: 100%;
 }
+.sec05-h1{
+	color: #181818;
+	font-size: 35px;
+	text-align: center;
+	padding: 1% 0 1% 0;
+}
+.text-line1{
+	width: 60%;
+	height: 2px;
+	background: #000;
+	margin: 0 auto;
+}
 
 .sec05-imgbox
 {
 	width: 100%;
 	height: 100%;
 	display: flex;
-	padding: 5% 0 10% 0;
+}
+
+.sec05-p{
+	color: #7f7f7f;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 
 /* section05 효과 삽입 start */
@@ -679,22 +710,26 @@ button{
 		font-size: 1em;
 	}
 }
-@media(max-width: 480px){}
+@media(max-width: 480px){
+
+
+}
 
 /* section05 end */
 
 /* section06 start */
 #section06{
 	width:100%; 
-	background: #fff;
+	background: url(../images/section06-bg.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
 	position: relative;
 }
 
 .section06-warp{
 	width: 100%;
-	height: auto;
 	padding-top: 5%;
-	padding-bottom: 20%;
+	padding-bottom: 5%;
 }
 
 .sec06-mapbox{
@@ -704,7 +739,7 @@ button{
 .sec06-map{
 	overflow: hidden;
 	padding-top:10%;
-	padding-bottom: 30.25%;
+	padding-bottom: 20%;
 	position: relative;
 	height: 0;
 }
@@ -712,20 +747,28 @@ button{
 .sec06-map iframe{
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 10%;
 	height: 100%;
 	width: 100%;
 }
 
 
 .text-line2{
-	width: 1000px;
+	width: 60%;
 	height: 2px;
-	background: #000;
+	background: #fff;
 	margin: 0 auto;
 	margin-top: 2%;
+	margin-bottom: 2%;
 }
+.sec06-text-box{
+	width: 50%;
+	height: 100%;
+	background: rgba(238, 238, 238, 0.5);
+	margin: 0 auto;
+	padding-bottom: 5%;
 
+}
 
 
 .sec06-text-box p {
@@ -747,9 +790,28 @@ button{
 @media(max-width: 480px){}
 
 
+footer{
+	background: #181818;
+	width: 100%;
+	height: 20%;
+	position: relative;
+}
 
+.footer-h1{
+	color: #fff;
+	text-align: center;
+	padding-top: 1%;
+}
+
+.footer-p{
+	font-size: 10px;
+	color: #fff;
+	text-align: center;
+	padding-top: 1%;
+}
 
 /* section06 end */
+
 
 
 .menu_box{
