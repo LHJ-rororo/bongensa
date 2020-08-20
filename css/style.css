@@ -46,7 +46,9 @@ button{
 	background:url(../images/section01-main.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	position: relative;}
+	position: relative;
+	background-attachment: fixed;
+}
 
 .section01-warp{
 	width: 100%;
@@ -60,6 +62,8 @@ button{
 }
 
 @media(max-width: 1200px){
+
+
 	.section01-warp{
 		padding-top: 30%;
 		padding-bottom: 30%;
@@ -73,6 +77,9 @@ button{
 	}
 }
 @media(max-width: 768px){
+	#section01{
+		background-attachment: scroll;
+	}
 	.section01-warp{
 		padding-top: 45%;
 		padding-bottom: 45%;
@@ -80,9 +87,13 @@ button{
 }
 
 @media(max-width: 480px){
+	#section01{
+		background-attachment: scroll;
+	}
 	.section01-warp{
-		padding-top: 75%;
+		padding-top: 60%;
 		padding-bottom: 75%;
+		
 	}
 }
 
@@ -168,17 +179,6 @@ button{
 	justify-content: center;
 }
 
-.sec02-btn{
-	width: 200px;
-	height: 35px;
-	border-radius: 50px;
-	background: #68d167;
-	border: none;
-	font-family: 'NotoSerifKR';
-	color: #FFF;
-	text-align: center	;
-
-}
 
 @media(max-width: 1200px){
 	.section02-warp{ 
@@ -207,7 +207,7 @@ button{
 		font-size: 1.3em;
 	}
 	.small-text{
-		margin-bottom: 2%;
+		margin-bottom: 10%;
 	}
 }
 
@@ -219,6 +219,7 @@ button{
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		padding-top: 0;
 	}
 	.text-box{
 		text-align: center;
@@ -235,7 +236,7 @@ button{
 
 	.sec02-img{
 		width: 100%;
-		height: 100%;
+		height: 60%;
 		position: absolute;
 		margin-left: 0;
 	}
@@ -246,9 +247,7 @@ button{
 		font-size:1em;
 		color: #121212;
 	}
-.sec02-btn{
-	display: none;
-}
+
 }
 
 @media(max-width: 480px){
@@ -264,7 +263,7 @@ button{
 		padding-bottom: 30%;
 	}
 	.sec02-img{
-		height: 100%;
+		height: 85%;
 	}
 }
 
@@ -278,6 +277,27 @@ button{
 	position: relative;
 	
 }
+.sec03-p{
+	color: #7f7f7f;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 2%;
+}
+
+.sec03-h1{
+	columns: #181818;
+	font-size: 35px;
+	text-align: center;
+	padding: 5% 0 3% 0;
+}
+
+.sec03-line{
+	width: 50%;
+	height: 2px;
+	background: #000;
+	margin: 0 auto;
+}
+
 .section03-warp{
 	width: 100%;
 	height: 1000px;
@@ -327,20 +347,39 @@ button{
 
 @media(max-width: 1200px){
 	.section03-warp{
-		align-items: center;
+		height: 800px;
+		padding-top: 2%;
+		flex-direction: column;
 	}
 	.sec03-big-box{
 		height: 50%;
 		background-size: 110%;
+		margin: 0 auto;
+	}
+	.sec03-jogamdo{
+		background-position: left top;
+		
+	}
+	.sec03-big-box{
+		width: 80%;
+
+	}
+	.sec03-menu{
+		width: 80%;
+		height: 500px;
+		overflow: auto;
+		margin: 0 auto;
+
 	}
 }
 @media(max-width: 768px){
 	#section03{
-		top:30%;
+		top:0;
 	}
 	.section03-warp{
 		display: flex;
 		flex-direction: column;
+		height: auto;
 	}
 	.sec03-big-box{
 		width: 100%;
@@ -348,14 +387,16 @@ button{
 	}
 	.sec03-menu{
 		width: 100%;
-		height: 200px;
+		height: 500px;
 		overflow: auto;
+
 	}
 	.sec03-menu>ul>li{
 		margin: 0 1%;
 	}
 	.sec03-jogamdo{
-		
+		padding-top: 50%;
+		padding-bottom: 15%;
 		background-size: 145%;
 		background-position: top left;
 	}
@@ -370,14 +411,18 @@ button{
 		height: 40%;
 	}
 	.sec03-jogamdo{
-		height: 100%;
+		
+		padding-bottom: 25%;
 		background-size: 145%;
 		background-position: top left;
 	}
 	.sec03-menu{
 		width: 100%;
+		height: 400px;
+	}
+
+	.sec03-menu>ul{
 		height: 100%;
-		overflow: auto;
 	}
 }
 
@@ -513,7 +558,7 @@ button{
 	padding: 1% 0 1% 0;
 }
 .text-line1{
-	width: 60%;
+	width: 50%;
 	height: 2px;
 	background: #000;
 	margin: 0 auto;
@@ -691,7 +736,15 @@ button{
 
 /* section05 효과 삽입 end */
 
-@media(max-width: 1200px){}
+@media(max-width: 1200px){
+	.sec05-h1{
+		padding: 3% 0 3% 0;
+	}
+	.sec05-p{
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+}
 @media(max-width: 768px){
 	#section05{
 		height:auto;
@@ -730,6 +783,8 @@ button{
 	width: 100%;
 	padding-top: 5%;
 	padding-bottom: 5%;
+	background:rgba(238, 238, 238, 0.5);
+	
 }
 
 .sec06-mapbox{
@@ -754,9 +809,9 @@ button{
 
 
 .text-line2{
-	width: 60%;
+	width: 55%;
 	height: 2px;
-	background: #fff;
+	background: #181818;
 	margin: 0 auto;
 	margin-top: 2%;
 	margin-bottom: 2%;
@@ -777,7 +832,7 @@ button{
 }
 
 .info{
-	font-size: 30px;
+	font-size: 20px;
 }
 
 
