@@ -18,26 +18,37 @@
 <!-- section01 (main) 시작 -->
 <section id="section01">
     <div class="menu_box">
-        <div class="logo"><a href="#section01">
+        <div class="logo">
+            <a href="#section01">
             <img src="images/logo.png" class="logo-fff" alt="봉은사 로고">
-        </a></div>
-        <ul>
+        </a>
+        </div>
+        <ul class="menuNav">
             <li><a href="#section01">메인</a></li>
             <li><a href="#section02">소개</a></li>
             <li><a href="#section03">조감도</a></li>
             <li><a href="#section04">사진첩</a></li>
             <li><a href="#section05">주변볼거리</a></li>
             <li><a href="#section06">오시는길</a></li>
+
         </ul>
+        <div class="sec01-icon">
+            <a href="javascript:void(0);" style="width: 15px; height: 15px;" class="icon">&#9776;
+        </a>
+        </div>
     </div>
     <!-- navi end -->
     <div class="section01-warp">
         <div class="sec01-text">
             <p>선종불교의 명맥을 잇는</p>
             <h1>봉은사</h1>
+            <div class="sec01-line"></div>
         </div>
     </div>
+
 </section>
+
+
 <!-- section01 (main) 끝 -->
 <!-- section02 (소개) 시작 -->
 <section id="section02">
@@ -128,7 +139,7 @@
                 <img src="images/sec05-img1.jpg" alt="별마당도서관">
                 <div class="library">
                   <p><span>-총 7만 여권의 장서-</span><br><br>
-                    별마당 도서관은 센트럴플라자 중심에 총 2,800㎡ (약 850평) 복층으로 구성되어 있습니다.13m 높이 서가의 은은한 불빛이 공간 전체를 부드럽게 감싸는 편안한 서재를 컨셉으로 다양한 테이블과 노트북 작업이 가능하도록 콘센트가 마련되어 있습니다.특히 1층은 지하 1층의 선큰(Sunken) 공간을 조망하면서 여유롭게 독서 가능한 독립적인 공간으로 구성됩니다.</p><br>
+                    별마당 도서관은 센트럴플라자 중심에 총 2,800㎡ (약 850평) 복층으로 구성되어 있습니다.13m 높이 서가의 은은한 불빛이 공간 전체를 부드럽게 감싸는 편안한 서재를 컨셉으로 다양한 테이블과 노트북 작업이 가능하도록 콘센트가 마련되어 있습니다.</p><br>
                   <div class="heading">
                     <h2>별마당 도서관</h2>
                   </div>
@@ -175,24 +186,30 @@
 
 <div id="section06">
     <div class="section06-warp">
-        <h1 class="sec05-h1">오시는 길</h1>
-        <div class="text-line1"></div>
-        <div class="sec06-mapbox">
-            <div class="sec06-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.7058088165813!2d127.0551879156471!3d37.514856234843215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca46941fa9981%3A0x45689c57c2e44d69!2z67SJ7J2A7IKs!5e0!3m2!1sko!2skr!4v1597652505939!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="margin-box">
+            <div class="imsi">
+                    <h1 class="sec06-h1">오시는 길</h1>
+                    <div class="text-line1"></div>
+                    <div class="sec06-text-box">
+                        <p class="info">주소</p>
+                        <div class="info-line"></div>
+                        <p>서울특별시 강남구 삼성1동 봉은사로 531</p>
+                        <p class="info">전화번호</p>
+                        <div class="info-line"></div>
+                        <p>02-3218-4800</p>
+                    </div>
             </div>
-        </div>
-        <div class="text-line2"></div>
-        <div class="sec06-text-box">
-            <p class="info">주소</p>
-            <p>서울특별시 강남구 삼성1동 봉은사로 531</p>
-            <p class="info">전화번호</p>
-            <p>02-3218-4800</p>
-        </div>
+            <div class="sec06-mapbox">
+                <div class="sec06-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.7058088165813!2d127.0551879156471!3d37.514856234843215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca46941fa9981%3A0x45689c57c2e44d69!2z67SJ7J2A7IKs!5e0!3m2!1sko!2skr!4v1597652505939!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+    
+
         </div>
     </div>
-
 </div>
+
 
 <!-- sectiom06 (오시는길) 끝 -->
 
@@ -226,6 +243,8 @@
 		  return false;
 	   });
 	});
+
+
 </script>
 
 <footer>

@@ -29,10 +29,25 @@ button{
 	border-style: none;
 }
 
+@media (min-width:836px){
+	.sec01-icon{
+		display: none;
+	}
+}
+
 @media(max-width: 835px){
 	.menu_box ul{
 		display: none;
 	}
+	.sec01-icon{
+		position: absolute;
+		width: 80%;
+		height: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
 }
             
 
@@ -57,9 +72,18 @@ button{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-top: 25%;
-	padding-bottom: 20%;
+	padding-top: 20%;
+	padding-bottom: 15%;
 }
+
+.sec01-line{
+	width: 2px;
+	height: 100px;
+	background: #fff;
+	margin: 50px auto;
+
+}
+
 
 @media(max-width: 1200px){
 
@@ -107,6 +131,8 @@ button{
 	font-size: 30px;
 	padding-bottom: 20px;
 }
+
+
 
 
 /* section01 end */
@@ -781,28 +807,44 @@ button{
 
 .section06-warp{
 	width: 100%;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	height: 500px;
 	background:rgba(238, 238, 238, 0.5);
-	
+	display: flex;
+	margin: 0 auto;
+}
+.margin-box{
+	width: 80%;
+	display: flex;
+	margin: 0 auto;
+}
+.sec06-h1{
+	display: block;
+	text-align: center;
+	font-size: 35px;
+	padding: 1% 0;
+}
+.imsi{
+	width: 50%;
+	height: 80%;
+
+	margin: 5% 0;
 }
 
 .sec06-mapbox{
-	width: 80%;
-	margin: 0 auto;
+	width: 50%;
+
 }
 .sec06-map{
 	overflow: hidden;
-	padding-top:10%;
-	padding-bottom: 20%;
 	position: relative;
-	height: 0;
+	height: 100%;
+	width: 100%;
 }
 
 .sec06-map iframe{
 	position: absolute;
 	left: 0;
-	top: 10%;
+	top: 0;
 	height: 100%;
 	width: 100%;
 }
@@ -818,7 +860,7 @@ button{
 }
 .sec06-text-box{
 	width: 50%;
-	height: 100%;
+	height: 80%;
 	background: rgba(238, 238, 238, 0.5);
 	margin: 0 auto;
 	padding-bottom: 5%;
@@ -828,13 +870,19 @@ button{
 
 .sec06-text-box p {
 	text-align: center;
-	padding: 1% 0;
+	padding: 3% 0;
 }
 
 .info{
 	font-size: 20px;
 }
 
+.info-line{
+	width: 40%;
+	height: 2px;
+	background: gray;
+	margin: 3% auto;
+}
 
 @media(max-width: 1200px){}
 @media(max-width: 768px){
