@@ -45,7 +45,7 @@
 
         </ul>
         <div class="sec01-icon">
-            <a href="javascript:void(0);" style="width: 15px; height: 15px;" class="icon">&#9776;
+            <a href="javascript:void(0);"class="icon">&#9776;
         </a>
         </div>
     </div>
@@ -55,7 +55,7 @@
             <p>선종불교의 명맥을 잇는</p>
             <h1>봉은사</h1>
             <div class="sec01-line"></div>
-            <div class="sec01-arrow"><img src="images/down-arrow.png" alt="" style="width: 55px"></div>
+            <a href=""><span></span><span></span><span></span></a>
         </div>
     </div>
 
@@ -134,28 +134,28 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                  <div class="sec04-img1"></div>
+                  <div class="sec04-size sec04-img1"></div>
               </div>
               <div class="swiper-slide">
-                <div class="sec04-img2"></div>
+                <div class="sec04-size sec04-img2"></div>
               </div>
               <div class="swiper-slide">
-                <div class="sec04-img3"></div>
+                <div class="sec04-size sec04-img3"></div>
               </div>
               <div class="swiper-slide">
-                <div class="sec04-img4"></div>
+                <div class="sec04-size sec04-img4"></div>
               </div>
               <div class="swiper-slide">
-                <div class="sec04-img5"></div>
+                <div class="sec04-size sec04-img5"></div>
               </div>
               <div class="swiper-slide">
-                <div class="sec04-img6"></div>
+                <div class="sec04-size sec04-img6"></div>
               </div>
               <div class="swiper-slide">
-                <div class="sec04-img7"></div>
+                <div class="sec04-size sec04-img7"></div>
               </div>
               <div class="swiper-slide">
-                <div class="sec04-img8"></div>
+                <div class="sec04-size sec04-img8"></div>
               </div>
             </div>
     <!-- Add Pagination -->
@@ -190,7 +190,7 @@
         <p class="sec05-p">국제교류의 장, 코엑스 스타필드에서 최고의 문화생활을 누려보세요.</p>
         <div class="sec05-imgbox">
             <div class="sec05-box sec05-img1">
-                <img src="images/sec05-img1.jpg" alt="별마당도서관">
+                <img src="images/sec05-img1.jpg" alt="별마당도서관" class="coex">
                 <div class="library">
                   <p><span>-총 7만 여권의 장서-</span><br><br>
                     별마당 도서관은 센트럴플라자 중심에 총 2,800㎡ (약 850평) 복층으로 구성되어 있습니다.13m 높이 서가의 은은한 불빛이 공간 전체를 부드럽게 감싸는 편안한 서재를 컨셉으로 다양한 테이블과 노트북 작업이 가능하도록 콘센트가 마련되어 있습니다.</p><br>
@@ -201,7 +201,7 @@
                 
               </div>
               <div class="sec05-box sec05-img2">
-                <img src="images/sec05-img2.jpg" alt="아쿠아리움-코엑스점-">
+                <img src="images/sec05-img2.jpg" alt="아쿠아리움-코엑스점-" class="coex">
                 <div class="aquarium">
                   <p>
                     <span>-국내에서 제일 많은 상어가 살고 있는 곳-</span><br><br>
@@ -215,7 +215,7 @@
                 
               </div>
               <div class="sec05-box sec05-img3">
-                <img src="images/sec05-img3.jpg" alt="메가박스-코엑스점-">
+                <img src="images/sec05-img3.jpg" alt="메가박스-코엑스점-" class="coex">
                 <div class="cinema">
                   <p> <span>-국내 최대 규모의 프리미엄 시네마-</span><br><br>
                     부티크 호텔의 개성을 더한
@@ -238,29 +238,14 @@
 
 <!-- sectiom06 (오시는길) 시작 -->
 
-<div id="section06">
-    <div class="section06-warp">
-        <div class="margin-box">
-            <div class="imsi">
-                    <h1 class="sec06-h1">오시는 길</h1>
-                    <div class="text-line1"></div>
-                    <div class="sec06-text-box">
-                        <p class="info">주소</p>
-                        <div class="info-line"></div>
-                        <p>서울특별시 강남구 삼성1동 봉은사로 531</p>
-                        <p class="info">전화번호</p>
-                        <div class="info-line"></div>
-                        <p>02-3218-4800</p>
-                    </div>
-            </div>
-            <div class="sec06-mapbox">
-                <div id="map"></div>
-            </div>
-    
+<section id="section06">
 
-        </div>
-    </div>
-    <script>
+  <div class="sec06-mapbox">
+  <div id="map"></div>
+  </div>
+</section>
+
+<script>
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = { 
         center: new kakao.maps.LatLng(37.514997, 127.057387), // 지도의 중심좌표
@@ -269,8 +254,8 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
-var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png', // 마커이미지의 주소입니다    
-    imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
+var imageSrc = 'images/map-logo.png', // 마커이미지의 주소입니다    
+    imageSize = new kakao.maps.Size(100, 100), // 마커이미지의 크기입니다
     imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
       
 // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
