@@ -930,7 +930,8 @@ a {
 
 /* section06 start */
 #section06{
-	width:100%; 
+	width:100%;
+	padding: 10% 0;
 	background: url(../images/section06-bg.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -972,8 +973,8 @@ a {
 	position: relative;
 	left: 0;
 	top: 0;
+	width: 100% !important;
 	height: 500px !important;
-	width: 500px !important;
 }
 
 
