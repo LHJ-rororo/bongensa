@@ -26,6 +26,7 @@ strong{
 
 button{
 	border-style: none;
+	background: inherit;
 }
 
 @media (min-width:836px){
@@ -39,12 +40,14 @@ button{
 		display: none;
 	}
 	.sec01-icon{
-		position: absolute;
 		width: 80%;
-		height: 100%;
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
+		height: auto;
+	}
+	.xi-bars{
+		position: absolute;
+		top: 10%;
+		right: 10%;
+		font-size: 35px;
 	}
 
 }
@@ -385,9 +388,10 @@ a {
 }
 
 .section03-warp{
-	width: 100%;
+	width: 80%;
 	height: 1000px;
 	display: flex;
+	margin: 0 auto;
 
 }
 
@@ -396,6 +400,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 0 auto;
 
 }
 
@@ -422,6 +427,7 @@ a {
 	background: url(../images/section04-jogamdo.png);
 	background-position: left center;
 	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 
@@ -707,7 +713,6 @@ a {
 }
 .section05-warp{
 	width: 100%;
-	height: 100%;
 }
 .sec05-h1{
 	color: #181818;
@@ -923,6 +928,9 @@ a {
 }
 @media(max-width: 480px){
 
+	.section05-warp{
+		height: auto !important;
+	}
 
 }
 
@@ -931,41 +939,18 @@ a {
 /* section06 start */
 #section06{
 	width:100%;
-	padding: 10% 0;
-	background: url(../images/section06-bg.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
+	height: auto;
 	position: relative;
-
 }
 
 .section06-warp{
-	width: 100%;
-	height: 500px;
-	background:rgba(238, 238, 238, 0.5);
-	display: flex;
-	margin: 0 auto;
-}
-.margin-box{
 	width: 80%;
-	display: flex;
 	margin: 0 auto;
-}
-.sec06-h1{
-	display: block;
-	text-align: center;
-	font-size: 35px;
-	padding: 1% 0;
-}
-.imsi{
-	width: 50%;
-	height: 80%;
-
-	margin: 5% 0;
 }
 
 .sec06-mapbox{
 	width: 50%;
+	margin: 0 auto;
 
 }
 #map{
@@ -978,40 +963,33 @@ a {
 }
 
 
-
 .text-line2{
-	width: 55%;
-	height: 2px;
-	background: #181818;
-	margin: 0 auto;
-	margin-top: 2%;
-	margin-bottom: 2%;
+    width: 50%;
+    height: 2px;
+    background: #000;
+    margin: 0 auto;
 }
-.sec06-text-box{
+
+.sec06-h1 {
+    text-align: center;
+    padding: 2% 0;
+    font-size: 25px;
+}
+
+.HowWay{
+	width: 100%;
+	height: 60%;
+	display: flex;
+}
+
+.HowWay-content{
 	width: 50%;
-	height: 80%;
+	height: 400px;
 	background: rgba(238, 238, 238, 0.5);
-	margin: 0 auto;
-	padding-bottom: 5%;
+	margin: 5% auto;
 
 }
 
-
-.sec06-text-box p {
-	text-align: center;
-	padding: 3% 0;
-}
-
-.info{
-	font-size: 20px;
-}
-
-.info-line{
-	width: 40%;
-	height: 2px;
-	background: gray;
-	margin: 3% auto;
-}
 
 @media(max-width: 1200px){}
 @media(max-width: 768px){
@@ -1019,18 +997,15 @@ a {
 		width: 100%;
 	}
 }
-@media(max-width: 279px){
-	.imsi{
-		width: 100%;
-	}
+@media(max-width: 480px){
 	.sec06-mapbox{
-		display: flex;
-		flex-direction: row-reverse;
-	}
-
-
-	#map{
 		width: 100%;
+	}
+	.HowWay{
+		flex-direction: column;
+	}
+	.HowWay-content{
+		height: 230px;
 	}
 }
 

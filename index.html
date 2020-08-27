@@ -23,6 +23,9 @@
 <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=e3ad48897fbcc55db53f7bb81baa7ed0"></script>
 <!-- kakao map api code -->
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<!-- Icon code -->
+
 
 </head>
 
@@ -34,20 +37,21 @@
             <a href="#section01">
             <img src="images/logo.png" class="logo-fff" alt="봉은사 로고">
         </a>
+        <div class="sec01-icon">
+          <a class="xi-bars"></a>
+      </div>
         </div>
+
         <ul class="menuNav">
-            <li><a href="#section01">메인</a></li>
-            <li><a href="#section02">소개</a></li>
-            <li><a href="#section03">조감도</a></li>
-            <li><a href="#section04">사진첩</a></li>
-            <li><a href="#section05">주변볼거리</a></li>
-            <li><a href="#section06">오시는길</a></li>
+            <li><a href="#" id="sec-btn1">메인</a></li>
+            <li><a href="#" id="sec-btn2">소개</a></li>
+            <li><a href="#" id="sec-btn3">조감도</a></li>
+            <li><a href="#" id="sec-btn4">사진첩</a></li>
+            <li><a href="#" id="sec-btn5">주변볼거리</a></li>
+            <li><a href="#" id="sec-btn6">오시는길</a></li>
 
         </ul>
-        <div class="sec01-icon">
-            <a href="javascript:void(0);"class="icon">&#9776;
-        </a>
-        </div>
+
     </div>
     <!-- navi end -->
     <div class="section01-warp">
@@ -239,9 +243,21 @@
 <!-- sectiom06 (오시는길) 시작 -->
 
 <section id="section06">
+  <div class="section06-warp">
 
-  <div class="sec06-mapbox">
-  <div id="map"></div>
+    <div class="sec06-mapbox">
+      <div id="map"></div>
+    </div>
+
+    <div class="sec06-text">
+      <h1 class="sec06-h1">봉은사 오시는 길</h1>
+      <div class="text-line2"></div>
+      <ul class="HowWay">
+        <li class="HowWay-content Bus">버스</li>
+        <li class="HowWay-content Subway">지하철</li>
+      </ul>
+      </div>
+    
   </div>
 </section>
 
@@ -284,7 +300,7 @@ marker.setMap(map);
 
 
 <script>
-	/**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
+	/**↓ 스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
 	if (jQuery(window).width() > 0) {
     jQuery(window).on("scroll",function(ev){
         if(jQuery(window).scrollTop() > 150 ) { /**높이 픽셀 조정**/
@@ -297,19 +313,60 @@ marker.setMap(map);
     });
 	}
 
-	/**마우스 부드럽게 해당위치로 이동**/
+	/**↓ 마우스 부드럽게 해당위치로 이동**/
 	$(function(){
-	   $('.menuNav').click(function() {
-		  var speed = 800;
-		  var href= $(this).attr("href");
-		  var target = $(href == "#" || href == "" ? 'html' : href);
-		  var position = target.offset().top;
-		  $('body,html').animate({scrollTop:position}, speed, 'swing');
-		  return false;
-	   });
+    $(function () {
+            $('#sec-btn1').click(function () {
+                var offset = $('#section01').offset();
+                $('html,body').animate({scrollTop:offset.top},600);
+            });
+        });
 	});
 
+  $(function(){
+    $(function () {
+            $('#sec-btn2').click(function () {
+                var offset = $('#section02').offset();
+                $('html,body').animate({scrollTop:offset.top},600);
+            });
+        });
+	});
 
+  $(function(){
+    $(function () {
+            $('#sec-btn3').click(function () {
+                var offset = $('#section03').offset();
+                $('html,body').animate({scrollTop:offset.top},600);
+            });
+        });
+	});
+
+  $(function(){
+    $(function () {
+            $('#sec-btn4').click(function () {
+                var offset = $('#section04').offset();
+                $('html,body').animate({scrollTop:offset.top},600);
+            });
+        });
+	});
+
+  $(function(){
+    $(function () {
+            $('#sec-btn5').click(function () {
+                var offset = $('#section05').offset();
+                $('html,body').animate({scrollTop:offset.top},600);
+            });
+        });
+	});
+	$(function(){
+    $(function () {
+            $('#sec-btn6').click(function () {
+                var offset = $('#section06').offset();
+                $('html,body').animate({scrollTop:offset.top},600);
+            });
+        });
+	});
+	/**↑ 마우스 부드럽게 해당위치로 이동**/
 </script>
 
 <footer>
