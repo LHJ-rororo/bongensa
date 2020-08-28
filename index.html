@@ -4,10 +4,9 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>봉은사 홈페이지</title>
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <!-- jQuery css -->
 
 <link rel="stylesheet" href="css/reset.css">
@@ -105,22 +104,69 @@
 
         <div class="sec03-big-box">
             <div class="sec03-jogamdo"></div>
-            <div class="sec03-text"></div>
         </div>
-        <div class="sec03-menu">
+        <div id="tabs" class="sec03-menu">
             <ul>
-                <li><button class="sec03-btn">진여문</button></li>
-                <li><button class="sec03-btn">법왕루</button></li>
-                <li><button class="sec03-btn">전통문화체험관</button></li>
-                <li><button class="sec03-btn">지장전</button></li>
-                <li><button class="sec03-btn">대웅전</button></li>
-                <li><button class="sec03-btn">3층석탑</button></li>
-                <li><button class="sec03-btn">심검당</button></li>
-                <li><button class="sec03-btn">연회루(연회다원)</button></li>
-                <li><button class="sec03-btn">미륵전</button></li>
-                <li><button class="sec03-btn">종루</button></li>
-                <li><button class="sec03-btn">미륵대불</button></li>
+                <li><a href="#tabs-1">진여문</a></li>
+                <li><a href="#tabs-2">법왕루</a></li>
+                <li><a href="#tabs-3"><button class="sec03-btn">전통문화체험관</button></a></li>
+                <li><a href="#tabs-4">지장전</a></li>
+                <li><a href="#tabs-5">대웅전</a></li>
+                <li><a href="#tabs-6">3층석탑</a></li>
+                <li><a href="#tabs-7">심검당</a></li>
+                <li><a href="#tabs-8">연회루(연회다원)</a></li>
+                <li><a href="#tabs-9">미륵전</a></li>
+                <li><a href="#tabs-10">종루</a></li>
+                <li><a href="#tabs-11">미륵대불</a></li>
             </ul>
+            <div id="tabs-1">
+              <p><strong>진여문</strong></p><br>
+              <p> 사찰에 들어서는 첫 번째 문을 일주문(一柱門)이라고 하는데 봉은사에서는 ‘진여문’이라고 한다.</p>
+            </div>
+            <div id="tabs-2">
+              <p><strong>법왕루</strong></p><br>
+              <p>법왕루란 문자 그대로 법의 왕, 즉 부처님이 계시는 곳을 말하며 대웅전과 마주하여 누각으로 세워져 있다.</p>
+            </div>
+            <div id="tabs-3">
+              <p><strong>전통문화체험관</strong></p><br>
+              <p>전통문화를 체험할 수 있는 곳이다.</p>
+            </div>
+
+            <div id="tabs-4">
+              <p><strong>지장전</strong></p><br>
+              <p>지장전은 주불로 지장보살을 모시고 죽은 이의 넋을 인도하여 극락왕생하도록 기원하는 전각이다. </p>
+            </div>
+
+            <div id="tabs-5">
+              <p><strong>대웅전</strong></p><br>
+              <p>대웅전은 새벽 예불부터 조석 예불이 항상 이루어져 불자들의 발길이 끊이지 않는 신행 활동의 중심이다.</p>
+            </div>
+            <div id="tabs-6">
+              <p><strong>3층석탑</strong></p><br>
+              <p>대웅전 앞마당에 세워진 전형적인 3층 석탑으로서 부처님 사리 1과가 모셔져 있다.</p>
+            </div>
+            <div id="tabs-7">
+              <p><strong>심검당</strong></p><br>
+              <p>심검당은 사찰에서 선방이나 강당이다.</p>
+            </div>
+            <div id="tabs-8">
+              <p><strong>연회루(연회다원)</strong></p><br>
+              <p>'연회루' 또는 '연회다원’ 이라고 불리는 이곳은 봉은사 창건주인 연회국사의 법호를 딴 전통차체험관이다.</p>
+            </div>
+            <div id="tabs-9">
+              <p><strong>미륵전</strong></p><br>
+              <p>미륵대불 앞에 위치한 미륵전은 법왕루를 신축하면서 옛 법왕루를 그 모습 그대로 옮긴 전각이다.</p>
+            </div>
+            <div id="tabs-10">
+              <p><strong>종루</strong></p><br>
+              <p>종루에는 범종과 법고, 운판, 목어의 사물(四物)이 봉안되어 있으며, 새벽예불과 저녁예불을 시작할 때 사물을 치는 곳이다.</p>
+            </div>
+            <div id="tabs-11">
+              <p><strong>미륵대불</strong></p><br>
+              <p>미륵대불은 봉은사 성보로써 높이 23m로 국내 최대의 크기의 부처님이다.<br>
+                현재 미륵전과 미륵부처님이 모셔진 광장은 신도들의 기도 장소이지만 경우에 따라 공연 등 문화 행사장으로 사용된다.</p>
+            </div>
+
         </div>
     </div>
 </section>
@@ -253,8 +299,43 @@
       <h1 class="sec06-h1">봉은사 오시는 길</h1>
       <div class="text-line2"></div>
       <ul class="HowWay">
-        <li class="HowWay-content Bus">버스</li>
-        <li class="HowWay-content Subway">지하철</li>
+        <li class="HowWay-content">
+          <ul class="Bus">
+            <li class="Bus-01">
+              <i class="xi-bus bus-green"></i>
+              <button class="bus-green-btn">지선</button>
+              <p>3412, 3411, 2415</p>
+            </li>
+              
+            <li class="Bus-02">
+              <i class="xi-bus bus-blue"></i>
+              <button class="bus-blue-btn">간선</button>
+              <p>342, N61, 143</p>
+            </li>
+          </ul>
+        </li>
+        <li class="HowWay-content">
+          <ul class="Subway">
+            <li class="Subway-00">
+              <i class="xi-subway nd2-subway"></i>
+              <button class="nd2-subway-btn">2호선</button>
+              <p>삼성역 6번 출구로 나와서 아셈타워 쪽으로 600m쯤 올라오시면 좌측에 봉은사 진입로가 있습니다.</p>
+            </li>
+            <li class="Subway-00">
+              <i class="xi-subway nd7-subway"></i>
+              <button class="nd7-subway-btn">7호선</button>
+              <p>청담역 2번 출구로 나와서 경기고 방향으로 800m쯤 올라오시면 우측에 봉은사 진입로가 있습니다.</p>
+            </li>
+            <li class="Subway-00">
+              <i class="xi-subway nd9-subway"></i>
+              <button class="nd9-subway-btn">9호선</button>
+              <p> 봉은사역 1번 출구로 나와서 100m쯤 올라오시면 봉은사 입구가 있습니다</p>
+            </li>
+          </ul>
+          
+          
+          
+        </li>
       </ul>
       </div>
     
@@ -367,6 +448,12 @@ marker.setMap(map);
         });
 	});
 	/**↑ 마우스 부드럽게 해당위치로 이동**/
+
+  $( function() {
+    $( "#tabs" ).tabs({
+      collapsible: true
+    });
+  } );
 </script>
 
 <footer>
