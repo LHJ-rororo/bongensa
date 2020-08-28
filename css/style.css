@@ -1068,14 +1068,12 @@ a {
 	}
 }
 @media(max-width: 480px){
-	.section06-warp {
+	.section06-warp 
+	{
 		width: 100%;}
 
 	.sec06-mapbox{
 		width: 100%;
-	}
-	.HowWay{
-		flex-direction: column;
 	}
 
 }
