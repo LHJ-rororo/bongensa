@@ -175,111 +175,283 @@ $("dt").click(function(){
 
 <!-- section04 (사진첩) 시작 -->
 <div id="section04">
-    <div class="section04-warp">
-        <div class="sec04-text">
-            <h1 class="sec04-h1">사진첩</h1>
-            <div class="text-line"></div>
-            <p class="sec04-p">봉은사의 여러가지 모습을 눈에 담아보세요</p>
-        </div>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                  <div class="sec04-size sec04-img1"></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="sec04-size sec04-img2"></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="sec04-size sec04-img3"></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="sec04-size sec04-img4"></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="sec04-size sec04-img5"></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="sec04-size sec04-img6"></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="sec04-size sec04-img7"></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="sec04-size sec04-img8"></div>
-              </div>
-            </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
+  <div class="section04-warp">
+    <div class="bigbox sec04-bigbox">
+        <div class="line sec04-line"></div>
+        <h1>봉은사 전경</h1>
+        <p class="normal-p sec02-p sec02-p-01">아름답고 평화로운 봉은사의 풍경</p>
+        <p class="normal-p sec02-p sec02-p-02">
+            봉은사는 도심 속 벽돌바닥을 뚫고 피어오른 들꽃처럼 바쁜 도시 풍경 속에 놓여진 절입니다
+            <br>
+            봉은사의 내부에는 평화로이 거닐 수 있는 숲길부터
+            <br>
+            옛 찻집의 향수를 닮은 카페와 사진 찍기 좋은 여러 장소들이 존재합니다.
+            <br>
+            가끔은 봉은사에 방문하셔서 지친 몸을 휴식하며 평화로운 공기를 느끼며 안식을 취하는 것도 좋지 않을까요
+            </p>
+        <div class="line"></div>
     </div>
+
+
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="sec04-size sec04-img1"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sec04-size sec04-img2"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sec04-size sec04-img3"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sec04-size sec04-img4"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sec04-size sec04-img5"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sec04-size sec04-img6"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sec04-size sec04-img7"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sec04-size sec04-img8"></div>
+                </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="../package/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 3,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                });
+            </script>
+            <!-- Swiper -->
+
+
+
+</div>
+
+
 </div>
 <!-- section04 (사진첩) 끝 -->
 
 <!-- sectiom05 (주변볼거리) 시작 -->
 <div id="section05">
-    <div class="section05-warp">
-        <h1 class="sec05-h1">봉은사 주변 볼거리</h1>
-        <div class="text-line1"></div>
-        <p class="sec05-p">국제교류의 장, 코엑스 스타필드에서 최고의 문화생활을 누려보세요.</p>
-        <div class="sec05-imgbox">
-            <div class="sec05-box sec05-img1">
-                <img src="images/sec05-img1.jpg" alt="별마당도서관" class="coex">
-                <div class="library">
-                  <p><span>-총 7만 여권의 장서-</span><br><br>
-                    별마당 도서관은 센트럴플라자 중심에 총 2,800㎡ (약 850평) 복층으로 구성되어 있습니다.13m 높이 서가의 은은한 불빛이 공간 전체를 부드럽게 감싸는 편안한 서재를 컨셉으로 다양한 테이블과 노트북 작업이 가능하도록 콘센트가 마련되어 있습니다.</p><br>
-                  <div class="heading">
-                    <h2>별마당 도서관</h2>
+
+  <div class="section05-warp">
+ 
+    <!-- 이미지 시작 -->
+            <div class="cont s--inactive">
+                <!-- cont inner start -->
+                <div class="cont__inner">
+                  <!-- el start -->
+                  <div class="el">
+                    <div class="el__overflow">
+                      <div class="el__inner">
+                        <div class="el__bg"></div>
+                        <div class="el__preview-cont">
+                          <h2 class="el__heading">별마당도서관</h2>
+                        </div>
+                        <div class="el__content">
+                          <div class="el__text">총 7만 여권의 장서</div>
+                          <br><br>
+                          <p class="normal-p el-p">별마당 도서관은 센트럴플라자 중심에 총 2,800㎡ (약 850평) 복층으로 구성되어 있습니다.
+                              <br> 13m 높이 서가의 은은한 불빛이 공간 전체를 부드럽게 감싸는 편안한 서재를 컨셉으로 
+                              <br> 다양한 테이블과 노트북 작업이 가능하도록 콘센트가 마련되어 편의적이기도 합니다.
+                              <br> 봉은사를 열심히 돌아다녀 다리가 아프다면 이곳에 앉아 책 한권을 읽어보는 건 어떠신가요? </p>
+                          <div class="el__close-btn"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="el__index">
+                      <div class="el__index-back">1</div>
+                      <div class="el__index-front">
+                        <div class="el__index-overlay" data-index="1">1</div>
+                      </div>
+                    </div>
                   </div>
+                  <!-- el end -->
+                  <!-- el start -->
+                  <div class="el">
+                    <div class="el__overflow">
+                      <div class="el__inner">
+                        <div class="el__bg"></div>
+                        <div class="el__preview-cont">
+                          <h2 class="el__heading">코엑스 아쿠아리움</h2>
+                        </div>
+                        <div class="el__content">
+                            <div class="el__text">국내에서 가장 많은 상어를 볼 수 있는 곳</div>
+                            <br><br>
+                            <p class="normal-p el-p">개장 당시 카리브해, 태평양, 인도양에서 <br>
+                                747 전세 항공기로 삼성동까지 이사 온 상어들을 한 자리에서 만나세요.<br> </p>
+                          <div class="el__close-btn"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="el__index">
+                      <div class="el__index-back">2</div>
+                      <div class="el__index-front">
+                        <div class="el__index-overlay" data-index="2">2</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- el end -->
+                  <!-- el start -->
+                  <div class="el">
+                    <div class="el__overflow">
+                      <div class="el__inner">
+                        <div class="el__bg"></div>
+                        <div class="el__preview-cont">
+                          <h2 class="el__heading">메가박스 코엑스점</h2>
+                        </div>
+                        <div class="el__content">
+                            <div class="el__text">국내 최대 규모의 프리미엄 시네마</div>
+                            <br><br>
+                            <p class="normal-p el-p">부티크 호텔의 개성을 더한
+                                메가박스만의 프리미엄 시네마,진정한 영화 사운드를 통해
+                                최고의 영화 경험을 선사하는 차세대 상영관 <br> 메가박스 1호점이 코엑스 스타필드몰에 입점해있습니다.<br> </p>
+                          <div class="el__close-btn"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="el__index">
+                      <div class="el__index-back">3</div>
+                      <div class="el__index-front">
+                        <div class="el__index-overlay" data-index="3">3</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- el end -->
+                <!-- el start -->
+                <div class="el">
+                <div class="el__overflow">
+                    <div class="el__inner">
+                    <div class="el__bg"></div>
+                    <div class="el__preview-cont">
+                        <h2 class="el__heading">세븐럭 카지노</h2>
+                    </div>
+                    <div class="el__content">
+                        <div class="el__text">도심속에서 즐기는 게임의 즐거움</div>
+                          <br><br>
+                          <p class="normal-p el-p">다양한 게임의 묘미를 느낄 수 있도록 테이블 게임 78대(바카라, 블랙잭, 포커, 룰렛 등)과
+                              <br> 최신형 머신게임 108대 및 전자테이블 45대를 운영하고 있습니다. 
+                              <br>세븐럭 카지노 강남 코엑스점은 코엑스센터와 우수한 호텔과 면세점, 
+                              <br>대형 영화관, 백화점 등의 각종 엔터테인먼트 시설들이 가까이 위치하고 있어 
+                              <br>다양한 관광 및 쇼핑의 즐거움을 마음껏 누리실 수 있습니다. </p>
+                        <div class="el__close-btn"></div>
+                    </div>
+                    </div>
                 </div>
+                <div class="el__index">
+                    <div class="el__index-back">4</div>
+                    <div class="el__index-front">
+                    <div class="el__index-overlay" data-index="4">4</div>
+                    </div>
+                </div>
+                </div>
+                <!-- el end -->
+                <!-- el start -->
+                <div class="el">
+                    <div class="el__overflow">
+                        <div class="el__inner">
+                        <div class="el__bg"></div>
+                        <div class="el__preview-cont">
+                            <h2 class="el__heading">곰바위 본점</h2>
+                        </div>
+                        <div class="el__content">
+                            <div class="el__text">대창으로 유명한 강남의 맛집 “곰바위”</div>
+                          <br><br>
+                          <p class="normal-p el-p">곰바위는 양, 대창으로 유명한 강남지역 맛집입니다.
+                              <br>이 집에 대표 메뉴는 “특양구이”와 "대창구이"인데 씹는 맛이 별미로 다른 곳에서 흔히 맛 볼 수 있는 음식이 아니므로
+                              <br>방문하면 꼭 한번 드셔보는 걸 추천합니다.
+                              <br> 국물음식이 그리워 지는 비 오는 날이면 매콤 칼칼한 “곱창전골”메뉴또한 별미이므로 추천합니다.
+                              <br>곰바위에서는 특양, 한우대창과 한우 꽃등심, 생갈비, 양념갈비, 주물럭, 차돌박이, 육회 와 특수 부위까지 등 
+                              <br>다양한 한우의 맛을 경험 할 수 있으며 새롭게 3층 규모에 신축 건물로 자리하고 있어 분위기 또한 나쁘지 않을 것입니다.
+                              <br> 오랜시간 관광의 마무리를 30여년 동안 사랑 받고 있는 맛집 “곰바위”에서 맛있는 음식과 함께 마무리 지어 보세요. </p>
+                            <div class="el__close-btn"></div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="el__index">
+                        <div class="el__index-back">5</div>
+                        <div class="el__index-front">
+                        <div class="el__index-overlay" data-index="5">5</div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- el end -->
+                                  
+                 
+                </div>
+                <!-- cont inner end -->
                 
               </div>
-              <div class="sec05-box sec05-img2">
-                <img src="images/sec05-img2.jpg" alt="아쿠아리움-코엑스점-" class="coex">
-                <div class="aquarium">
-                  <p>
-                    <span>-국내에서 제일 많은 상어가 살고 있는 곳-</span><br><br>
-                    개장 당시 카리브해, 태평양, 인도양에서 <br>
-                    747 전세 항공기로 삼성동까지 이사 온 상어들을 한 자리에서 만나세요.<br>
-                  </p>
-                  <div class="heading">
-                    <h2>아쿠아리움</h2>
-                  </div>
-                </div>
-                
-              </div>
-              <div class="sec05-box sec05-img3">
-                <img src="images/sec05-img3.jpg" alt="메가박스-코엑스점-" class="coex">
-                <div class="cinema">
-                  <p> <span>-국내 최대 규모의 프리미엄 시네마-</span><br><br>
-                    부티크 호텔의 개성을 더한
-                    메가박스만의 프리미엄 시네마,진정한 영화 사운드를 통해
-                    최고의 영화 경험을 선사하는 차세대 상영관 <br> 메가박스 1호점이 코엑스 스타필드몰에 입점해있습니다.<br>
-                    </p>
-                  <div class="heading">
-                    <h2>메가박스</h2>
-                  </div>
-                </div>
-                
-              </div>
+    
+    
+    <script>
+        var $cont = document.querySelector('.cont');
+    var $elsArr = [].slice.call(document.querySelectorAll('.el'));
+    var $closeBtnsArr = [].slice.call(document.querySelectorAll('.el__close-btn'));
+    
+    setTimeout(function() {
+      $cont.classList.remove('s--inactive');
+    }, 200);
+    
+    $elsArr.forEach(function($el) {
+      $el.addEventListener('click', function() {
+        if (this.classList.contains('s--active')) return;
+        $cont.classList.add('s--el-active');
+        this.classList.add('s--active');
+      });
+    });
+    
+    $closeBtnsArr.forEach(function($btn) {
+      $btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        $cont.classList.remove('s--el-active');
+        document.querySelector('.el.s--active').classList.remove('s--active');
+      });
+    });
+    
+    
+    </script>
+    <!-- 이미지소스 끝 -->
+    
+    <div class="sec05-text">
+        <h1>봉은사 주변 볼거리</h1>
+        <div class="sec05-line"></div>
+        <p class="normal-p sec05-p">아름다운 절, 봉은사의 맞은편에는 서울의 대표 컨벤션 센터인 코엑스가 위치해있습니다. 
+            <br>코엑스 안에는 여러 편의시설과 여가시설이 있지만
+        <br> 그 중에서도 유명하면서 모든이들이 즐기기 좋은 장소를 추천합니다.</p>
     </div>
-    </div>
+    
+        </div>
+
+
 </div>
 <!-- sectiom05 (주변볼거리) 끝 -->
 
