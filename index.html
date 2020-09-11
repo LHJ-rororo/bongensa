@@ -457,63 +457,111 @@ $("dt").click(function(){
 
 
 
-
-<!-- sectiom06 (오시는길) 시작 -->
-
+<!-- section06 (오시는길) 시작 -->
 <section id="section06">
   <div class="section06-warp">
 
-    <div class="sec06-mapbox">
-      <div id="map"></div>
-    </div>
-
-    <div class="sec06-text">
-      <h1 class="sec06-h1">봉은사 오시는 길</h1>
-      <div class="text-line2"></div>
-      <ul class="HowWay">
-        <li class="HowWay-content">
-          <ul class="Bus">
-            <li class="Bus-01">
-              <i class="xi-bus bus-green"></i>
-              <button class="bus-green-btn">지선</button>
-              <p>3412, 3411, 2415</p>
-            </li>
-              
-            <li class="Bus-02">
-              <i class="xi-bus bus-blue"></i>
-              <button class="bus-blue-btn">간선</button>
-              <p>342, N61, 143</p>
-            </li>
-          </ul>
-        </li>
-        <li class="HowWay-content">
-          <ul class="Subway">
-            <li class="Subway-00">
-              <i class="xi-subway nd2-subway"></i>
-              <button class="nd2-subway-btn">2호선</button>
-              <p>삼성역 6번 출구로 나와서 아셈타워 쪽으로 600m쯤 올라오시면 좌측에 봉은사 진입로가 있습니다.</p>
-            </li>
-            <li class="Subway-00">
-              <i class="xi-subway nd7-subway"></i>
-              <button class="nd7-subway-btn">7호선</button>
-              <p>청담역 2번 출구로 나와서 경기고 방향으로 800m쯤 올라오시면 우측에 봉은사 진입로가 있습니다.</p>
-            </li>
-            <li class="Subway-00">
-              <i class="xi-subway nd9-subway"></i>
-              <button class="nd9-subway-btn">9호선</button>
-              <p> 봉은사역 1번 출구로 나와서 100m쯤 올라오시면 봉은사 입구가 있습니다</p>
-            </li>
-          </ul>
-          
-          
-          
-        </li>
-      </ul>
-      </div>
-    
+    <div class="sec06-bigbox">
+      <div class="line sec06-line"></div>
+      <h1>봉은사 오시는 길</h1>
+      <div class="line"></div>
   </div>
-</section>
 
+  <div class="column">
+      <div class="map01">
+        <div class="mapbox">
+          <div id="map"></div>
+        </div>
+      </div>
+      <div class="sec06-tabs">
+        <div class="mapbox">
+          <div class="tab">
+
+                        <ul class="tabs">
+                          <li><a href="#">지하철</a></li>
+                          <li><a href="#">버스</a></li>
+                        </ul> <!-- / tabs -->
+                      
+                        <div class="tab_content">
+                      
+                          <div class="tabs_item">
+
+
+                            <li class="HowWay-content">
+                              <ul class="Subway">
+                                <li class="Subway-00">
+                                  <i class="xi-subway nd2-subway"></i>
+                                  <button class="sub-btn nd2-subway-btn">2호선</button>
+                                  <p>삼성역 6번 출구로 나와서 아셈타워 쪽으로 600m쯤 올라오시면 좌측에 봉은사 진입로가 있습니다.</p>
+                                </li>
+                                <li class="Subway-00">
+                                  <i class="xi-subway nd7-subway"></i>
+                                  <button class="sub-btn nd7-subway-btn">7호선</button>
+                                  <p>청담역 2번 출구로 나와서 경기고 방향으로 800m쯤 올라오시면 우측에 봉은사 진입로가 있습니다.</p>
+                                </li>
+                                <li class="Subway-00">
+                                  <i class="xi-subway nd9-subway"></i>
+                                  <button class="sub-btn nd9-subway-btn">9호선</button>
+                                  <p> 봉은사역 1번 출구로 나와서 100m쯤 올라오시면 봉은사 입구가 있습니다</p>
+                                </li>
+                              </ul>
+
+
+                          </div> <!-- / tabs_item -->
+                      
+                          <div class="tabs_item">
+
+
+                            
+                              <li class="HowWay-content">
+                                <ul class="Bus">
+                                  <li class="Bus-01">
+                                    <i class="xi-bus bus-green"></i>
+                                    <button class="sub-btn bus-green-btn">지선</button>
+                                    <p>3412, 3411, 2415</p>
+                                  </li>
+                                    
+                                  <li class="Bus-02">
+                                    <i class="xi-bus bus-blue"></i>
+                                    <button class="sub-btn bus-blue-btn">간선</button>
+                                    <p>342, N61, 143</p>
+                                  </li>
+                                
+                              </li>
+                          
+                          
+                          </div> <!-- / tabs_item -->
+
+                        </div> <!-- / tab_content -->
+                      </div> <!-- / tab -->
+                      <script>
+                        $(document).ready(function() { 
+
+            (function ($) { 
+              $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
+              
+              $('.tab ul.tabs li a').click(function (g) { 
+                var tab = $(this).closest('.tab'), 
+                  index = $(this).closest('li').index();
+                
+                tab.find('ul.tabs > li').removeClass('current');
+                $(this).closest('li').addClass('current');
+                
+                tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
+                tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
+                
+                g.preventDefault();
+              } );
+            })(jQuery);
+
+            });
+                      </script>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+<!-- kakao map JS -->
 <script>
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = { 
@@ -541,13 +589,9 @@ var marker = new kakao.maps.Marker({
 marker.setMap(map);  
 
 
-        </script>
-</div>
-
-
-<!-- sectiom06 (오시는길) 끝 -->
-
-
+</script>
+<!-- kakao map JS -->
+<!-- section06 (오시는길) 끝 -->
 
 
 
@@ -628,11 +672,20 @@ marker.setMap(map);
   } );
 </script>
 
+<!-- footer 시작 -->
 <footer>
-    <h1 class="footer-h1">FOOTER</h1>
-    <p class="footer-p">개인정보처리방침 | 이용약관 <br>
-        Copyright © Bongensa Corp. All rights reserved.</p>
+  <div class="footer">
+    <div class="footer-info">
+          <h1>봉은사 홈페이지</h1>
+    <p>주소: 서울특별시 강남구 삼성1동 봉은사로 531</p>
+    <p>연락처: 02-3218-4800</p>
+    <p class="footer-p">
+      Copyright © Bongensa Corp. All rights reserved- Leehyojin</p>
+    </div>
+
+  </div>
 </footer>
+<!-- footer 끝 -->
 
 </body>
 </html>

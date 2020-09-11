@@ -90,7 +90,7 @@ a{
 }
 
 .section01-warp{
-	height: 800px;
+	height: 950px;
 	background: url(../images/section01-main.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -282,7 +282,7 @@ a {
 	width: 100%;
 }
 .section02-warp{
-	height: 710px;
+	height: 800px;
 	background-color: #141824;
 	display: flex;
 	
@@ -291,7 +291,7 @@ a {
 		width: 100%;
 		height: 80%;
 		display: flex;
-		margin: 5% 0 0 0;
+		margin: 6% 0 0 0;
 		flex-direction: column;
 	}
 		.bigbox{
@@ -433,6 +433,7 @@ a {
 /* 섹션2 미디어 끝 */
 
 /* section02 end */
+
 /* section03 start */
 #section03{
 	width: 100%;
@@ -440,7 +441,7 @@ a {
 }
 .section03-warp{
 	width: 100%;
-	height: 800px;
+	height: 900px;
 	background-color: #e8eae3;
 	display: flex;
 	align-items: center;
@@ -564,6 +565,7 @@ a {
 
   /* 아코디언 메뉴 끝 */
 /* section03 end */
+
 /* section04 start */
 #section04{
 	width:100%; 
@@ -572,7 +574,7 @@ a {
 	position: relative;}
 
 	.section04-warp{
-		height: 800px;
+		height: 900px;
 		background-color: #141824;
 	}
 	
@@ -668,7 +670,7 @@ a {
 	.swiper-container {
 		width: 100%;
 		height: 50%;
-		top: -110px !important;
+		top: -140px !important;
 	  }
 	
 	  .swiper-slide {
@@ -729,7 +731,7 @@ a {
 	position: relative;
 }
 .section05-warp{
-	height: 1000px;
+	height: 950px;
 	background-color: #e8eae3;
 }
 /* 주변볼거리 효과 */
@@ -1131,19 +1133,49 @@ a {
 
 /* section06 start */
 #section06{
-	width:100%;
-	height: auto;
+	width: 100%;
 	position: relative;
 }
-
 .section06-warp{
-	width: 80%;
-	margin: 0 auto;
+	width: 100%;
+	height: 800px;
+	background-color: #141824;
 }
-
-.sec06-mapbox{
-	width: 50%;
+.sec06-bigbox{
+    width: 80%;
+    height: 200px;
 	margin: 0 auto;
+	position: relative;
+	top: 30px;
+
+}
+.sec06-bigbox h1 {
+	font-weight: 400;
+	font-size: 2.25rem;
+	line-height: 1.1;
+	color: #fff;
+	text-align: center;
+	padding: 2% 0;
+}
+.column{
+	display: flex;
+}
+.map01{
+	width: 70%;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.map02{
+	width: 30%;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mapbox{
+	width: 90%;
 
 }
 #map{
@@ -1154,110 +1186,159 @@ a {
 	width: 100% !important;
 	height: 500px !important;
 }
-
-
-.text-line2{
-    width: 50%;
-    height: 2px;
-    background: #000;
-    margin: 0 auto;
-}
-
-.sec06-h1 {
-    text-align: center;
-    padding: 2% 0;
-    font-size: 25px;
-}
-
-.HowWay{
-	width: 100%;
-	height: 60%;
-	display: flex;
-}
-
-
-.HowWay-content{
+.sec06-tabs{
 	width: 50%;
-	height: 400px;
-	background: rgba(238, 238, 238, 0.5);
-	margin: 5% auto;
-
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.Bus-01{
-	height: 50%;
-}
-.Bus-02{
-	height: 50%;
-}
-.Subway-00{
-	height: 33.3%;
-}
-
-
-.xi-bus{
-	font-size: 100px;
-}
+/* 버스 아이콘 및 버튼 색깔 ↓ */
 .bus-green{
 	color: #1bc866;
+}
+.bus-green-btn{
+	background: #1bc866;
 }
 .bus-blue{
 	color: #1f85ea;
 }
-.xi-subway{
-	font-size: 100px;
+.bus-blue-btn{
+	background: #1f85ea;
 }
+
+/* 버스 아이콘 및 버튼 색깔 ↑ */
+
+/* 지하철 아이콘 및 버튼 색깔↓ */
 .nd2-subway{
 	color: #3B9F37;
+}
+.nd2-subway-btn{
+	background: #3B9F37;
 }
 .nd7-subway{
 	color: #5B692E;
 }
+.nd7-subway-btn{
+	background: #5B692E;
+}
 .nd9-subway{
 	color: #B39627;
 }
-
-@media(max-width: 1200px){}
-@media(max-width: 768px){
-	.sec06-map{
-		width: 100%;
-	}
+.nd9-subway-btn{
+	background: #B39627;
 }
-@media(max-width: 480px){
-	.section06-warp 
-	{
-		width: 100%;}
-
-	.sec06-mapbox{
-		width: 100%;
-	}
-
-}
-
-
-footer{
-	background: #181818;
-	width: 100%;
-	height: 20%;
-	position: relative;
-}
-
-.footer-h1{
+.sub-btn{
 	color: #fff;
-	text-align: center;
-	padding-top: 1%;
+	border-radius: 50px;
+}
+/* 지하철 아이콘 및 버튼 색깔↑ */
+
+/* 탭바설정 */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+.tab {
+  padding-top: 50px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #888;
+  -webkit-font-smoothing: antialiased;
 }
 
-.footer-p{
-	font-size: 10px;
-	color: #fff;
-	text-align: center;
-	padding-top: 1%;
+.tabs {
+  display: table;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
 }
+.tabs li {
+  float: left;
+  line-height: 38px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+.tabs a {
+  background-color: #141824;
+  border-bottom: 1px solid #fff;
+  color: #888;
+  font-weight: 500;
+  display: block;
+  letter-spacing: 0;
+  outline: none;
+  padding: 0 142px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid #141824;
+}
+
+.tabs_item {
+  display: none;
+  padding: 80px 0;
+  background: #e8eae3;
+}
+.tabs_item h4 {
+  font-weight: bold;
+  color: #141824;
+  font-size: 20px;
+}
+.tabs_item img {
+  width: 200px;
+  float: left;
+  margin-right: 30px;
+}
+.tabs_item:first-child {
+  display: block;
+}
+
+.current a {
+  color: #141824;
+  background: #eff0f2;
+}
+
+/* // END TAB ~~~~~~~~~~~~~~~ (.)(.) */
 
 /* section06 end */
 
 
+/* footer start */
+footer{
+	width: 100%;
+	position: relative;
+}
+.footer{
+	width: 100%;
+	height: 200px;
+	background: #35373D;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-info{
+	width: 80%;
+	height: 60%;
+	color: #aaa;
+	margin: 0 auto;
+}
+.footer-info h1{
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+.footer-info p{
+	line-height: 1.5em;
+}
 
+/* footer end */
+
+
+/* navi css */
 .menu_box{
 	width:100%; 
 	height:90px; 
@@ -1267,23 +1348,6 @@ footer{
 	-webkit-transition:all 0.5s ease-in-out;
 	z-index: 3;
 }
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	.fixed{
 		background:rgba(0,0,0,0.5); transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out;}
