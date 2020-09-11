@@ -845,7 +845,7 @@ a {
   }
   .el:nth-child(4) .el__bg:before {
 	transition-delay: 0.3s;
-	background-image: url("../images/sec05-img4.png");
+	background-image: url("../images/sec05-img4.jpg");
   }
   .el:nth-child(5) {
 	transform: translate3d(420.8333333333%, 0, 0);
