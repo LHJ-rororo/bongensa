@@ -1,0 +1,40 @@
+.navbar__menu_box{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(0,0,0,0.5);
+	padding: 8px 12px;
+}
+.logo-fff{
+	height: 40px;
+}
+.navbar__menuNav{
+	display: flex;
+	color: #fff;
+	padding-left: 0;
+}
+.navbar__menuNav li{
+	padding: 8px 12px;
+}
+.navbar__toogleBtn{
+	display: none;
+	position: absolute;
+	top: 15px;
+	right: 32px;
+	font-size: 24px;
+	color: #fff;
+}
+
+@media (max-width:768px){
+	.navbar__menu_box{
+		flex-direction: column;
+	}
+	.navbar__menuNav{
+		display: none;
+		flex-direction: column;
+	}
+	.navbar__toogleBtn{
+		display: block;
+	}
+
+}

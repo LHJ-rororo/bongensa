@@ -103,37 +103,37 @@
                     
 
                 <dl>
-                    <dt>진여문</dt>
+                    <dt>01.진여문</dt>
                     <dd>사찰에 들어서는 첫 번째 문을 일주문(一柱門)이라고 하는데 봉은사에서는 ‘진여문’이라고 한다.</dd>
                     
-                    <dt>법왕루</dt>
+                    <dt>02.법왕루</dt>
                     <dd>법왕루란 문자 그대로 법의 왕, 즉 부처님이 계시는 곳을 말하며 대웅전과 마주하여 누각으로 세워져 있다.</dd>
                     
-                    <dt>전통문화체험관</dt>
+                    <dt>03.전통문화체험관</dt>
                     <dd>전통문화를 체험할 수 있는 곳이다.</dd>
                     
-                    <dt>지장전</dt>
+                    <dt>04.지장전</dt>
                     <dd>지장전은 주불로 지장보살을 모시고 죽은 이의 넋을 인도하여 극락왕생하도록 기원하는 전각이다.</dd>
                     
-                    <dt>대웅전</dt>
+                    <dt>05.대웅전</dt>
                     <dd>대웅전은 새벽 예불부터 조석 예불이 항상 이루어져 불자들의 발길이 끊이지 않는 신행 활동의 중심이다.</dd>
                     
-                    <dt>3층석탑</dt>
+                    <dt>06.3층석탑</dt>
                     <dd>대웅전 앞마당에 세워진 전형적인 3층 석탑으로서 부처님 사리 1과가 모셔져 있다.</dd>
                     
-                    <dt>심검당</dt>
+                    <dt>07.심검당</dt>
                     <dd>심검당은 사찰에서 선방이나 강당이다.</dd>
                     
-                    <dt>연회루(연회다원)</dt>
+                    <dt>08.연회루(연회다원)</dt>
                     <dd>'연회루' 또는 '연회다원’ 이라고 불리는 이곳은 봉은사 창건주인 연회국사의 법호를 딴 전통차체험관이다.</dd>
                     
-                    <dt>미륵전</dt>
+                    <dt>09.미륵전</dt>
                     <dd>미륵대불 앞에 위치한 미륵전은 법왕루를 신축하면서 옛 법왕루를 그 모습 그대로 옮긴 전각이다.</dd>
                     
-                    <dt>종루</dt>
+                    <dt>10.종루</dt>
                     <dd>종루에는 범종과 법고, 운판, 목어의 사물(四物)이 봉안되어 있으며, 새벽예불과 저녁예불을 시작할 때 사물을 치는 곳이다.</dd>
                     
-                    <dt>미륵대불</dt>
+                    <dt>11.미륵대불</dt>
                     <dd>미륵대불은 봉은사 성보로써 높이 23m로 국내 최대의 크기의 부처님이다.<br>
                         현재 미륵전과 미륵부처님이 모셔진 광장은 신도들의 기도 장소이지만 경우에 따라 공연 등 문화 행사장으로 사용된다.</dd>
                 </dl>
@@ -151,6 +151,39 @@
         <div class="sec03-img">
             <div class="sec03-jogamdo"></div>
         </div>
+
+        <div class="sec03-tabs">
+          <div class="worko-tabs">
+  
+            <input class="state" type="radio" title="tab-one" name="tabs-state" id="tab-one" checked />
+            <input class="state" type="radio" title="tab-two" name="tabs-state" id="tab-two" />
+            <input class="state" type="radio" title="tab-three" name="tabs-state" id="tab-three" />
+            <input class="state" type="radio" title="tab-four" name="tabs-state" id="tab-four" />
+        
+            <div class="tabs flex-tabs">
+                <label for="tab-one" id="tab-one-label" class="tab">Tab One</label>
+                <label for="tab-two" id="tab-two-label" class="tab">Tab Two</label>
+                <label for="tab-three" id="tab-three-label" class="tab">Tab Three</label>
+                <label for="tab-four" id="tab-four-label" class="tab">Tab Four</label>
+        
+        
+                <div id="tab-one-panel" class="panel active">
+                  <h3>Responsive CSS Tabs - Flexbox</h3>
+                  <p>CSS only tabs built using flexbox, when the viewport drops below 600px wide the tabs turn into an accordion by chaging the flex order of the elements.</p>
+                </div>
+                <div id="tab-two-panel" class="panel">
+                    Tab two content
+                </div>
+                <div id="tab-three-panel" class="panel">
+                    Tab three content
+                </div>
+                <div id="tab-four-panel" class="panel">
+                    Tab four content
+                </div>
+            </div>
+        
+        </div>
+      </div>
     </div>
 </section>
 <!-- section03 (안내) 끝 -->
@@ -205,6 +238,9 @@
                     <div class="swiper-slide">
                         <div class="sec04-size sec04-img8"></div>
                     </div>
+                    <div class="swiper-slide">
+                      <div class="sec04-size sec04-img9"></div>
+                  </div>
                     </div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
@@ -434,139 +470,218 @@ $closeBtnsArr.forEach(function($btn) {
 
 <!-- section06 (오시는길) 시작 -->
 <section id="section06">
-    <div class="section06-warp">
-
-      <div class="sec06-bigbox">
-        <div class="line sec06-line"></div>
-        <h1>봉은사 오시는 길</h1>
-        <div class="line"></div>
-    </div>
-
-    <div class="column">
-        <div class="map01">
-          <div class="mapbox">
-            <div id="map"></div>
-          </div>
-        </div>
-        <div class="sec06-tabs">
-          <div class="mapbox">
-            <div class="tab">
-
-                          <ul class="tabs">
-                            <li><a href="#">지하철</a></li>
-                            <li><a href="#">버스</a></li>
-                          </ul> <!-- / tabs -->
-                        
-                          <div class="tab_content">
-                        
-                            <div class="tabs_item">
-
-
-                              <li class="HowWay-content">
-                                <ul class="Subway">
-                                  <li class="Subway-00">
-                                    <i class="xi-subway nd2-subway"></i>
-                                    <button class="sub-btn nd2-subway-btn">2호선</button>
-                                    <p>삼성역 6번 출구로 나와서 아셈타워 쪽으로 600m쯤 올라오시면 좌측에 봉은사 진입로가 있습니다.</p>
-                                  </li>
-                                  <li class="Subway-00">
-                                    <i class="xi-subway nd7-subway"></i>
-                                    <button class="sub-btn nd7-subway-btn">7호선</button>
-                                    <p>청담역 2번 출구로 나와서 경기고 방향으로 800m쯤 올라오시면 우측에 봉은사 진입로가 있습니다.</p>
-                                  </li>
-                                  <li class="Subway-00">
-                                    <i class="xi-subway nd9-subway"></i>
-                                    <button class="sub-btn nd9-subway-btn">9호선</button>
-                                    <p> 봉은사역 1번 출구로 나와서 100m쯤 올라오시면 봉은사 입구가 있습니다</p>
-                                  </li>
-                                </ul>
-
-
-                            </div> <!-- / tabs_item -->
-                        
-                            <div class="tabs_item">
-
-
-                              
-                                <li class="HowWay-content">
-                                  <ul class="Bus">
-                                    <li class="Bus-01">
-                                      <i class="xi-bus bus-green"></i>
-                                      <button class="sub-btn bus-green-btn">지선</button>
-                                      <p>3412, 3411, 2415</p>
-                                    </li>
-                                      
-                                    <li class="Bus-02">
-                                      <i class="xi-bus bus-blue"></i>
-                                      <button class="sub-btn bus-blue-btn">간선</button>
-                                      <p>342, N61, 143</p>
-                                    </li>
-                                  
-                                </li>
-                            
-                            
-                            </div> <!-- / tabs_item -->
-
-                          </div> <!-- / tab_content -->
-                        </div> <!-- / tab -->
-                        <script>
-                          $(document).ready(function() { 
-
-              (function ($) { 
-                $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
-                
-                $('.tab ul.tabs li a').click(function (g) { 
-                  var tab = $(this).closest('.tab'), 
-                    index = $(this).closest('li').index();
-                  
-                  tab.find('ul.tabs > li').removeClass('current');
-                  $(this).closest('li').addClass('current');
-                  
-                  tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
-                  tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
-                  
-                  g.preventDefault();
-                } );
-              })(jQuery);
-
-              });
-                        </script>
-          </div>
+  <div class="section06-warp">
+    <div class="color-box">
+        <div class="sec06-bigbox">
+          <div class="line sec06-line"></div>
+          <h1>봉은사 오시는 길</h1>
+          <div class="line"></div>
+      </div>
+   </div>
+  <div class="column">
+      <div class="map01">
+        <div class="mapbox">
+          <div id="map"></div>
         </div>
       </div>
-  </div>
+      <div class="sec06-tabs">
+        <div class="mapbox">
+          <div class="tab">
+
+                        <ul class="tabs">
+                          <li><a href="#">지하철</a></li>
+                          <li><a href="#">버스</a></li>
+                        </ul> <!-- / tabs -->
+                      
+                        <div class="tab_content">
+                      
+                          <div class="tabs_item">
+
+
+                            <li class="HowWay-content">
+                              <ul class="Subway">
+                                <li class="Subway-00">
+                                  <i class="xi-subway nd2-subway"></i>
+                                  <button class="sub-btn nd2-subway-btn">2호선</button>
+                                  <p>삼성역 6번 출구로 나와서 아셈타워 쪽으로 600m쯤 올라오시면 좌측에 봉은사 진입로가 있습니다.</p>
+                                </li>
+                                <li class="Subway-00">
+                                  <i class="xi-subway nd7-subway"></i>
+                                  <button class="sub-btn nd7-subway-btn">7호선</button>
+                                  <p>청담역 2번 출구로 나와서 경기고 방향으로 800m쯤 올라오시면 우측에 봉은사 진입로가 있습니다.</p>
+                                </li>
+                                <li class="Subway-00">
+                                  <i class="xi-subway nd9-subway"></i>
+                                  <button class="sub-btn nd9-subway-btn">9호선</button>
+                                  <p> 봉은사역 1번 출구로 나와서 100m쯤 올라오시면 봉은사 입구가 있습니다</p>
+                                </li>
+                              </ul>
+
+
+                          </div> <!-- / tabs_item -->
+                      
+                          <div class="tabs_item">
+
+
+                            
+                              <li class="HowWay-content">
+                                <ul class="Bus">
+                                  <li class="Bus-01">
+                                    <i class="xi-bus bus-green"></i>
+                                    <button class="sub-btn bus-green-btn">지선</button>
+                                    <p>3412, 3411, 2415</p>
+                                  </li>
+                                    
+                                  <li class="Bus-02">
+                                    <i class="xi-bus bus-blue"></i>
+                                    <button class="sub-btn bus-blue-btn">간선</button>
+                                    <p>342, N61, 143</p>
+                                  </li>
+                                
+                              </li>
+                          
+                          
+                          </div> <!-- / tabs_item -->
+
+                        </div> <!-- / tab_content -->
+                      </div> <!-- / tab -->
+                      <script>
+                        $(document).ready(function() { 
+
+            (function ($) { 
+              $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
+              
+              $('.tab ul.tabs li a').click(function (g) { 
+                var tab = $(this).closest('.tab'), 
+                  index = $(this).closest('li').index();
+                
+                tab.find('ul.tabs > li').removeClass('current');
+                $(this).closest('li').addClass('current');
+                
+                tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
+                tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
+                
+                g.preventDefault();
+              } );
+            })(jQuery);
+
+            });
+                      </script>
+        </div>
+      </div>
+    </div>
+</div>
 </section>
 <!-- kakao map JS -->
 <script>
-  var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-      mapOption = { 
-          center: new kakao.maps.LatLng(37.514997, 127.057387), // 지도의 중심좌표
-          level: 4 // 지도의 확대 레벨
-      };
-  
-  var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-  
-  var imageSrc = 'images/map-logo.png', // 마커이미지의 주소입니다    
-      imageSize = new kakao.maps.Size(100, 100), // 마커이미지의 크기입니다
-      imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
-        
-  // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
-  var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-      markerPosition = new kakao.maps.LatLng(37.514997, 127.057387); // 마커가 표시될 위치입니다
-  
-  // 마커를 생성합니다
-  var marker = new kakao.maps.Marker({
-      position: markerPosition, 
-      image: markerImage // 마커이미지 설정 
-  });
-  
-  // 마커가 지도 위에 표시되도록 설정합니다
-  marker.setMap(map);  
-  
-  
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.514997, 127.057387), // 지도의 중심좌표
+        level: 4 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+var imageSrc = 'images/map-logo.png', // 마커이미지의 주소입니다    
+    imageSize = new kakao.maps.Size(100, 100), // 마커이미지의 크기입니다
+    imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+      
+// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+    markerPosition = new kakao.maps.LatLng(37.514997, 127.057387); // 마커가 표시될 위치입니다
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition, 
+    image: markerImage // 마커이미지 설정 
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);  
+
+
 </script>
 <!-- kakao map JS -->
 <!-- section06 (오시는길) 끝 -->
+
+
+
+
+<script>
+	/**↓ 스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
+	if (jQuery(window).width() > 0) {
+    jQuery(window).on("scroll",function(ev){
+        if(jQuery(window).scrollTop() > 150 ) { /**높이 픽셀 조정**/
+            jQuery('.menu_box').addClass('fixed');  /**위의 높이에서 .fixed 클래스를 추가합니다. 스타일에서 자유롭게 수치 조절 가능합니다.**/
+        }
+        else{
+			jQuery('.menu_box').removeClass('fixed');
+        }
+        return false;
+    });
+	}
+
+	/**↓ 마우스 부드럽게 해당위치로 이동**/
+	$(function(){
+    $(function () {
+            $('#sec-btn1').click(function () {
+                var offset = $('#section01').offset();
+                $('html,body').animate({scrollTop:offset.top},600);
+            });
+        });
+	});
+
+  $(function(){
+    $(function () {
+            $('#sec-btn2').click(function () {
+                var offset = $('#section02').offset();
+                $('html,body').animate({scrollTop:offset.top},600);
+            });
+        });
+	});
+
+  $(function(){
+    $(function () {
+            $('#sec-btn3').click(function () {
+                var offset = $('#section03').offset();
+                $('html,body').animate({scrollTop:offset.top},600);
+            });
+        });
+	});
+
+  $(function(){
+    $(function () {
+            $('#sec-btn4').click(function () {
+                var offset = $('#section04').offset();
+                $('html,body').animate({scrollTop:offset.top},600);
+            });
+        });
+	});
+
+  $(function(){
+    $(function () {
+            $('#sec-btn5').click(function () {
+                var offset = $('#section05').offset();
+                $('html,body').animate({scrollTop:offset.top},600);
+            });
+        });
+	});
+	$(function(){
+    $(function () {
+            $('#sec-btn6').click(function () {
+                var offset = $('#section06').offset();
+                $('html,body').animate({scrollTop:offset.top},600);
+            });
+        });
+	});
+	/**↑ 마우스 부드럽게 해당위치로 이동**/
+
+  $( function() {
+    $( "#tabs" ).tabs({
+      collapsible: true
+    });
+  } );
+</script>
 
 <!-- footer 시작 -->
 <footer>
@@ -582,5 +697,6 @@ $closeBtnsArr.forEach(function($btn) {
   </div>
 </footer>
 <!-- footer 끝 -->
+
 </body>
 </html>

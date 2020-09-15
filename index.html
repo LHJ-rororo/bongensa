@@ -31,27 +31,42 @@
 <body>
 <!-- section01 (main) 시작 -->
 <section id="section01">
-    <div class="menu_box">
-        <div class="logo">
-            <a href="#section01">
-            <img src="images/logo.png" class="logo-fff" alt="봉은사 로고">
-        </a>
-        <div class="sec01-icon">
-          <a class="xi-bars"></a>
-      </div>
-        </div>
+  <nav class="navbar__menu_box"> 
 
-        <ul class="menuNav">
-            <li><a href="#" id="sec-btn1">메인</a></li>
-            <li><a href="#" id="sec-btn2">소개</a></li>
-            <li><a href="#" id="sec-btn3">조감도</a></li>
-            <li><a href="#" id="sec-btn4">사진첩</a></li>
-            <li><a href="#" id="sec-btn5">주변볼거리</a></li>
-            <li><a href="#" id="sec-btn6">오시는길</a></li>
 
-        </ul>
-
+  
+    <div class="navbar__logo">
+      <a href="#section01">
+        <img src="images/logo.png" class="logo-fff" alt="봉은사 로고">
+      </a>
+    </a>
     </div>
+
+    <ul class="navbar__menuNav">
+        <li><a href="#" id="sec-btn1">메인</a></li>
+        <li><a href="#" id="sec-btn2">소개</a></li>
+        <li><a href="#" id="sec-btn3">조감도</a></li>
+        <li><a href="#" id="sec-btn4">사진첩</a></li>
+        <li><a href="#" id="sec-btn5">주변볼거리</a></li>
+        <li><a href="#" id="sec-btn6">오시는길</a></li>
+
+    </ul>
+
+    <a href="#" class="navbar__toogleBtn">
+      <i class="xi-bars"></i>
+    </a>
+
+</nav>
+<!-- navi end -->
+<script>
+$(document).ready(function() {
+
+$('.navbar__toogleBtn').click(function() {
+$('.navbar__menuNav').toggle();
+});
+
+});
+</script>
     <!-- navi end -->
     <div class="section01-warp">
       <!-- 백그라운드 배경삽입 -->
@@ -220,6 +235,9 @@ $("dt").click(function(){
                 <div class="swiper-slide">
                     <div class="sec04-size sec04-img8"></div>
                 </div>
+                <div class="swiper-slide">
+                  <div class="sec04-size sec04-img9"></div>
+              </div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
@@ -460,13 +478,13 @@ $("dt").click(function(){
 <!-- section06 (오시는길) 시작 -->
 <section id="section06">
   <div class="section06-warp">
-
-    <div class="sec06-bigbox">
-      <div class="line sec06-line"></div>
-      <h1>봉은사 오시는 길</h1>
-      <div class="line"></div>
-  </div>
-
+    <div class="color-box">
+        <div class="sec06-bigbox">
+          <div class="line sec06-line"></div>
+          <h1>봉은사 오시는 길</h1>
+          <div class="line"></div>
+      </div>
+   </div>
   <div class="column">
       <div class="map01">
         <div class="mapbox">

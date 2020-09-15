@@ -296,7 +296,7 @@ a {
 	background: url(../images/section04-jogamdo.png);
 	background-position: bottom center;
 	background-repeat: no-repeat;
-	background-size: 90%;
+	background-size: 100%;
 }
 
 
@@ -384,6 +384,194 @@ a {
   }
 
   /* 아코디언 메뉴 끝 */
+/* 탭 메뉴 시작 */
+.sec03-tabs{
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: none;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+.tab {
+  padding-top: 50px;
+  margin-bottom: 20px;
+  position: relative;
+  /* Android 2.3 :checked fix */
+  overflow: hidden;
+  background: #fff;
+  width: 70%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #888;
+  -webkit-font-smoothing: antialiased;
+}
+@keyframes fake {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.tab body {
+  animation: fake 1s infinite;
+}
+.tab .worko-tabs {
+  margin: 20px;
+  width: 80%;
+}
+.tab .worko-tabs .state {
+  position: absolute;
+  left: -10000px;
+}
+.tab .worko-tabs .flex-tabs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tab .worko-tabs .flex-tabs .tab {
+  flex-grow: 1;
+  max-height: 40px;
+}
+.tab .worko-tabs .flex-tabs .panel {
+  background-color: #fff;
+  padding: 20px;
+  min-height: 300px;
+  display: none;
+  width: 100%;
+  flex-basis: auto;
+}
+.tab .worko-tabs .tab {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+  background-color: #eee;
+  cursor: hand;
+  cursor: pointer;
+  border-left: 10px solid #ccc;
+}
+.tab .worko-tabs .tab:hover {
+  background-color: #fff;
+}
+.tab #tab-one:checked ~ .tabs #tab-one-label,
+.tab #tab-two:checked ~ .tabs #tab-two-label,
+.tab #tab-three:checked ~ .tabs #tab-three-label,
+.tab #tab-four:checked ~ .tabs #tab-four-label {
+  background-color: #fff;
+  cursor: default;
+  border-left-color: #69be28;
+}
+.tab #tab-one:checked ~ .tabs #tab-one-panel,
+.tab #tab-two:checked ~ .tabs #tab-two-panel,
+.tab #tab-three:checked ~ .tabs #tab-three-panel,
+.tab #tab-four:checked ~ .tabs #tab-four-panel {
+  display: block;
+}
+@media (max-width: 600px) {
+  .tab .flex-tabs {
+    flex-direction: column;
+  }
+  .tab .flex-tabs .tab {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  .tab .flex-tabs .tab:last-of-type {
+    border-bottom: none;
+  }
+  .tab .flex-tabs #tab-one-label {
+    order: 1;
+  }
+  .tab .flex-tabs #tab-two-label {
+    order: 3;
+  }
+  .tab .flex-tabs #tab-three-label {
+    order: 5;
+  }
+  .tab .flex-tabs #tab-four-label {
+    order: 7;
+  }
+  .tab .flex-tabs #tab-one-panel {
+    order: 2;
+  }
+  .tab .flex-tabs #tab-two-panel {
+    order: 4;
+  }
+  .tab .flex-tabs #tab-three-panel {
+    order: 6;
+  }
+  .tab .flex-tabs #tab-four-panel {
+    order: 8;
+  }
+  .tab #tab-one:checked ~ .tabs #tab-one-label,
+.tab #tab-two:checked ~ .tabs #tab-two-label,
+.tab #tab-three:checked ~ .tabs #tab-three-label,
+.tab #tab-four:checked ~ .tabs #tab-four-label {
+    border-bottom: none;
+  }
+  .tab #tab-one:checked ~ .tabs #tab-one-panel,
+.tab #tab-two:checked ~ .tabs #tab-two-panel,
+.tab #tab-three:checked ~ .tabs #tab-three-panel,
+.tab #tab-four:checked ~ .tabs #tab-four-panel {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.tabs {
+  display: table;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+}
+.tabs li {
+  float: left;
+  line-height: 38px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+.tabs a {
+  background-color: #eff0f2;
+  border-bottom: 1px solid #fff;
+  color: #888;
+  font-weight: 500;
+  display: block;
+  letter-spacing: 0;
+  outline: none;
+  padding: 0 20px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid blue;
+}
+
+.tabs_item {
+  display: none;
+  padding: 30px 0;
+}
+.tabs_item h4 {
+  font-weight: bold;
+  color: blue;
+  font-size: 20px;
+}
+.tabs_item img {
+  width: 200px;
+  float: left;
+  margin-right: 30px;
+}
+.tabs_item:first-child {
+  display: block;
+}
+
+.current a {
+  color: #fff;
+  background: blue;
+}
+
+  /* 탭메뉴 끝 */
 /* section03 end */
 
 
@@ -478,6 +666,15 @@ a {
 	width: 100%;
 	height: 100%;
 	background: url(../images/sec04-img8.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin: 0 auto;
+}
+.sec04-img9{
+	width: 100%;
+	height: 100%;
+	background: url(../images/section02-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -920,6 +1117,7 @@ a {
 	color: #fff;
 }
 /* section05 end */
+
 /* section06 start */
 #section06{
 	width: 100%;
@@ -928,6 +1126,9 @@ a {
 .section06-warp{
 	width: 100%;
 	height: 800px;
+	background-color: #e8eae3;
+}
+.color-box{
 	background-color: #141824;
 }
 .sec06-bigbox{
@@ -952,6 +1153,7 @@ a {
 .map01{
 	width: 70%;
 	width: 80%;
+	margin-top: 35px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1053,14 +1255,14 @@ a {
   position: relative;
 }
 .tabs a {
-  background-color: #141824;
+  background-color: #e8eae3;
   border-bottom: 1px solid #fff;
   color: #888;
   font-weight: 500;
   display: block;
   letter-spacing: 0;
   outline: none;
-  padding: 0 142px;
+  padding: 0 7em;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -1088,13 +1290,14 @@ a {
 }
 
 .current a {
-  color: #141824;
-  background: #eff0f2;
+	color: #e8eae3;
+    background: #141824;
 }
 
 /* // END TAB ~~~~~~~~~~~~~~~ (.)(.) */
 
 /* section06 end */
+
 
 /* footer start */
 footer{
@@ -1124,3 +1327,152 @@ footer{
 }
 
 /* footer end */
+
+
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+##Device = 랩탑, 데스크탑
+##Screen = 1025px에서 1280px 사이
+/* */
+@media (min-width: 1025px) and (max-width: 1280px){
+	.section03-warp {
+		height: auto;}
+	.section03-warp {
+		height: 100%;
+		}
+		.sec03-text {
+			width: 40%;
+			height: 95%;
+		}
+		.sec03-img {
+			width: 80%;
+		}
+		.sec03-jogamdo {
+			height: 533px;
+			width: auto;
+			background-size: cover;
+		}
+		.tabs a {
+			padding: 0px 3em;
+		}
+
+}
+
+
+
+/*
+##Device = Tablets, Ipads (portrait),
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(세로),
+##Screen = 768px에서 1024px 사이
+*/
+
+@media (min-width: 768px) and (max-width: 1024px){
+	.sec03-text, dl, dt , dd{
+		display: none;
+	}
+	.sec03-tabs, #tab-menu {
+		display: block;
+	}
+	.sec03-jogamdo {
+		width: 90%;
+		background-position: top center;}
+.section03-warp {
+    flex-direction: column;
+}
+.sec03-img {
+	width: 100%;
+	display: flex;
+justify-content: center;
+align-items: center;
+}
+.sec03-tabs {
+	width: 100%;
+	height: 50%;}
+
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(가로)
+##Screen = 768px에서 1024px 사이
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+	.sec03-text, dl, dt , dd{
+		display: none;
+	}
+	.sec03-tabs, #tab-menu {
+		display: block;
+	}
+	.section03-warp {
+		flex-direction: column;
+	}
+	.sec03-img {
+		width: 100%;
+		display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+	.sec03-tabs {
+		width: 100%;
+		height: 50%;}
+}
+
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+##Device = 저해상도 태블릿, 모바일(가로)
+##Screen = 481px에서 767px 사이
+*/
+
+@media (min-width: 481px) and (max-width: 767px){
+	.sec03-text, dl, dt , dd{
+		display: none;
+	}
+	.sec03-tabs, #tab-menu {
+		display: block;
+	}
+	.section03-warp {
+		flex-direction: column;
+	}
+	.sec03-img {
+		width: 100%;
+		display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+	.sec03-tabs {
+		width: 100%;
+		height: 50%;}
+}
+
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+##Device = 대부분의 스마트폰 모바일 기기(세로)
+##Screen = 320px에서 479px 사이
+*/
+
+@media (min-width: 320px) and (max-width: 480px){
+	.sec03-text, dl, dt , dd{
+		display: none;
+	}
+	.sec03-tabs, #tab-menu {
+		display: block;
+	}
+	.section03-warp {
+		flex-direction: column;
+	}
+	.sec03-img {
+		width: 100%;
+		display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+	.sec03-tabs {
+		width: 100%;
+		height: 50%;}
+}}

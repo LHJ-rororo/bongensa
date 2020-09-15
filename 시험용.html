@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- jQuery css -->
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- reset css -->
+    
+    <link rel="stylesheet" href="css/시험용.css">
+    <!-- main css -->
+    
+      <!-- Swiper JS -->
+      <script src="https://package/swiper-bundle.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- slide css -->
+    
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=e3ad48897fbcc55db53f7bb81baa7ed0"></script>
+    <!-- kakao map api code -->
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- Icon code -->
+
+    <script src="menu.js" defer></script>
+</head>
+<body>
+ 
+<!-- section01 (main) 시작 -->
+<section id="section01">
+  <nav class="navbar__menu_box"> 
+
+
+  
+      <div class="navbar__logo">
+        <a href="#section01">
+          <img src="images/logo.png" class="logo-fff" alt="봉은사 로고">
+        </a>
+      </a>
+      </div>
+
+      <ul class="navbar__menuNav">
+          <li><a href="#" id="sec-btn1">메인</a></li>
+          <li><a href="#" id="sec-btn2">소개</a></li>
+          <li><a href="#" id="sec-btn3">조감도</a></li>
+          <li><a href="#" id="sec-btn4">사진첩</a></li>
+          <li><a href="#" id="sec-btn5">주변볼거리</a></li>
+          <li><a href="#" id="sec-btn6">오시는길</a></li>
+
+      </ul>
+
+      <a href="#" class="navbar__toogleBtn">
+        <i class="xi-bars"></i>
+      </a>
+
+</nav>
+  <!-- navi end -->
+<script>
+$(document).ready(function() {
+
+$('.navbar__toogleBtn').click(function() {
+  $('.navbar__menuNav').toggle();
+});
+
+});
+</script>
+</section>
+
+
+<!-- section01 (main) 끝 -->
+</body>
+</html>
