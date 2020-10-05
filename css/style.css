@@ -58,11 +58,7 @@ a{
 
 #section01{
 	width:100%;
-	background:url(../images/section01-main.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	position: relative;
-	background-attachment: fixed;
+
 }
 
 .section01-warp{
@@ -622,6 +618,7 @@ a{
   .cont {
 	position: relative;
 	left: 10%;
+	/* 미디어쿼리 0으로 바꾸기 */
 	overflow: hidden;
 	width: 72%;
 	height: 50vh;
@@ -1228,7 +1225,9 @@ footer{
 /* navi css */
 
 	.fixed{
-		background:rgba(0,0,0,0.5); transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out;}
+		background:rgba(0,0,0,0.5); 
+		transition:all 0.5s ease-in-out; 
+		-webkit-transition:all 0.5s ease-in-out;}
 	
 		/* .logo a{
 			font-size:46px; 
