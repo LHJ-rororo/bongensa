@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 메타설정 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>봉은사 홈페이지2</title>
+    <meta property="og:title" content="봉은사"/>
+    <meta property="og:description" content="도심 속의 평화, 봉은사"/>
+    <meta property="og:image" content="images/meta.jpg">
+    <link rel="shortcut icon" href="images/logo2.png" />
+<link rel="apple-touch-icon" href="images/logo2.ico"/>
+<!-- 메타설정 -->
+    <title>도심 속의 평화, 봉은사</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
@@ -35,7 +42,38 @@
 <!-- section01 (main) 시작 -->
 
 <section id="section01">
-<nav></nav>
+<!-- 내비게이션 메뉴 시작 -->
+<nav class="navbar__menu_box"> 
+  <div class="navbar__logo">
+    <a href="#section01">
+      <img src="images/logo.png" class="logo-fff" alt="봉은사 로고">
+    </a>
+  </a>
+  </div>
+  <ul class="navbar__menuNav">
+      <li><a href="#" id="sec-btn1">메인</a></li>
+      <li><a href="#" id="sec-btn2">소개</a></li>
+      <li><a href="#" id="sec-btn3">조감도</a></li>
+      <li><a href="#" id="sec-btn4">사진첩</a></li>
+      <li><a href="#" id="sec-btn5">주변볼거리</a></li>
+      <li><a href="#" id="sec-btn6">오시는길</a></li>
+  </ul>
+<a href="javascript:;" class="navbar__toogleBtn">
+    <i class="xi-bars"></i>
+</a>
+
+</nav>
+<!-- navi end -->
+<script>
+$(document).ready(function() {
+
+$('.navbar__toogleBtn').click(function() {
+$('.navbar__menuNav').toggle();
+});
+
+});
+</script>
+<!-- 네비게이션 메뉴 끝 -->
 <div class="section01-warp">
     <!-- 백그라운드 배경삽입 -->
     <div class="section01-text">
@@ -269,7 +307,6 @@
 <!-- section05 (주변볼거리) 시작 -->
 <section id="section05">
     <div class="section05-warp">
- 
 <!-- 이미지 시작 -->
         <div class="cont s--inactive">
             <!-- cont inner start -->
